@@ -1,0 +1,134 @@
+/* 전체 */
+
+
+
+/* 전체 종료 */
+/* 헤더 */
+
+header {
+  display: flex;
+  border-bottom: 1px solid #33333330;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* 로고 */
+
+h1.title-logo {
+  padding: 0 20px;
+  margin-right: 20px;
+}
+
+h1.title-logo span {
+  display: inline-block;
+  text-indent: -9999em;
+}
+
+h1.title-logo img {
+  width: 150px;
+}
+
+/* 로고 종료 */
+
+/* 메뉴 */
+
+nav.main-menu {
+  flex: 1;
+}
+
+nav.main-menu>ul>li,
+nav.main-menu ul ul>li {
+  display: inline-block;
+}
+
+nav.main-menu>ul>li {
+  text-align: center;
+  padding: 0 20px;
+  line-height: 80px;
+  font-size: 1.5rem;
+  color: #888888;
+  border-bottom: 5px solid #ffffff;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+nav.main-menu>ul>li:hover {
+  border-bottom-color: #0000ff50;
+  color: #333333;
+}
+
+nav.main-menu ul div {
+  display: none;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 85px;
+  border-top: 1px solid #33333330;
+  border-bottom: 1px solid #33333330;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+nav.main-menu>ul>li:hover div {
+  display: block;
+}
+
+nav.main-menu ul ul>li a {
+  color: #333333;
+  line-height: 80px;
+  padding: 0 20px;
+}
+
+nav.main-menu ul ul>li a:hover {
+  background-color: #eeeeee50;
+  color: #0000ff;
+}
+
+nav.main-menu>ul>li:not(:first-child),
+nav.main-menu ul ul>li:not(:first-child) {
+  margin-left: -4px;
+}
+
+nav.main-menu ul ul>li:first-child {
+  margin-left: 217px;
+}
+
+nav.main-menu a {
+  display: inline-block;
+}
+
+/* 메뉴 종료 */
+
+/* 우측 메뉴 */
+
+.user-menu li {
+  display: inline-block;
+}
+
+.user-menu li:not(:first-child) {
+  margin-left: 10px;
+}
+
+.user-menu li a {
+  display: inline-block;
+  color: #888888;
+  line-height: 80px;
+  padding: 0 20px;
+  background-color: #333333;
+}
+
+.user-menu li a:hover {
+  color: #333333;
+  text-decoration: underline;
+  background-color: #eeeeee50;
+}
+
+/* 우측 메뉴 종료 */
+
+/* 헤더 종료 */
+/* 메인 */
+/* 메인 종료 */
+/* 푸터 */
+/* 푸터 종료 */
