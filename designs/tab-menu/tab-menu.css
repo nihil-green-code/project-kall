@@ -1,0 +1,58 @@
+/* ==================== 초기화 ==================== */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* ==================== 레이아웃 가운데로 ==================== */
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==================== 탭 메뉴 박스 디자인 ==================== */
+div#menu-box {
+  border: 1px solid #333333;
+}
+
+/* ==================== 라벨 디자인 ==================== */
+label {
+  display: block;
+  border-bottom: 1px solid #333333;
+  padding: 10px;
+  cursor: pointer;
+  float: left;
+  color: #aaaaaa;
+  background-color: #dddddd;
+}
+
+input[type="radio"]:checked+label {
+  background-color: white;
+  color: #333333;
+}
+
+/* ==================== 탭 컨텐츠 디자인 ==================== */
+div.hidden {
+  display: none;
+}
+
+input#tab1:checked~div#content1 {
+  display: block;
+}
+
+input#tab2:checked~div#content2 {
+  display: block;
+}
+
+div.content {
+  padding: 10px;
+  clear: both;
+  text-align: center;
+}
