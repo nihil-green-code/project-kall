@@ -43,10 +43,7 @@ div.hidden {
   display: none;
 }
 
-input#tab1:checked~div#content1 {
-  display: block;
-}
-
+input#tab1:checked~div#content1,
 input#tab2:checked~div#content2 {
   display: block;
 }
