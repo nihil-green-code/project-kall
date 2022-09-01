@@ -12,6 +12,7 @@ header {
   justify-content: center;
   position: relative;
   box-sizing: border-box;
+  margin-bottom: 50px;
 }
 
 /* 로고 */
@@ -35,7 +36,6 @@ h1.title-logo img {
 }
 
 /* 로고 종료 */
-
 /* 메뉴 */
 
 nav.main-menu {
@@ -105,7 +105,6 @@ nav.main-menu a {
 }
 
 /* 메뉴 종료 */
-
 /* 우측 메뉴 */
 
 .user-menu li {
@@ -129,9 +128,41 @@ nav.main-menu a {
 }
 
 /* 우측 메뉴 종료 */
-
 /* 헤더 종료 */
 /* 메인 */
+
+main div {
+  /* height: 600px; */
+  width: 90%;
+  text-align: center;
+  line-height: 600px;
+  font-size: 2rem;
+}
+
+.image1 {
+  background-color: bisque;
+  margin-bottom: 50px;
+}
+
+.image2 {
+  background-color: cornsilk;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+.image3 {
+  background-color: darkgray;
+}
+
 /* 메인 종료 */
 /* 푸터 */
+
+footer {
+  margin-top: 50px;
+  background-color: #efefef;
+  border-top: 1px solid #33333310;
+  line-height: 150px;
+  text-align: center;
+}
+
 /* 푸터 종료 */
