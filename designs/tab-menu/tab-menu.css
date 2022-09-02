@@ -18,24 +18,27 @@ body {
 }
 
 /* ==================== 탭 메뉴 박스 디자인 ==================== */
-div#menu-box {
-  border: 1px solid #333333;
-}
+div#menu-box {}
 
 /* ==================== 라벨 디자인 ==================== */
-label {
+div#menu-box>label {
   display: block;
-  border-bottom: 1px solid #333333;
+  width: 200px;
   padding: 10px;
+  text-align: center;
   cursor: pointer;
   float: left;
   color: #aaaaaa;
   background-color: #dddddd;
+  border-bottom: 1px solid #aaaaaa;
+  box-sizing: border-box;
 }
 
-input[type="radio"]:checked+label {
-  background-color: white;
+div#menu-box>input[type="radio"]:checked+label {
+  background-color: #f3f3f3;
   color: #333333;
+  border: 1px solid #aaaaaa;
+  border-bottom: none;
 }
 
 /* ==================== 탭 컨텐츠 디자인 ==================== */
@@ -51,5 +54,7 @@ input#tab2:checked~div#content2 {
 div.content {
   padding: 10px;
   clear: both;
-  text-align: center;
+  border: 1px solid #aaaaaa;
+  border-top: none;
+  height: 100px;
 }

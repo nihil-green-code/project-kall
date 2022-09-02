@@ -1,0 +1,71 @@
+/* ==================== 초기화 ==================== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  padding: 10px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==================== 목록 초기화 ==================== */
+#menu {
+  width: 300px;
+}
+
+.item-list {
+  display: none;
+}
+
+/* ==================== 최상위 아이템 라벨 ==================== */
+input[type="checkbox"]+label {
+  display: block;
+  padding: 10px;
+  background-color: #333333;
+  border-bottom: 2px solid red;
+  color: #ffffff;
+  position: relative;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"]+label::after {
+  /* content: '\f107'; */
+  content: '\f106';
+  display: block;
+  margin-left: 10px;
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+input[type="checkbox"]:checked+label::after {
+  content: '\f107';
+}
+
+/* ==================== 최상위 아이템 목록 ==================== */
+input[type="checkbox"]:checked~ul {
+  display: block;
+}
+
+.item-list li {
+  padding: 10px;
+  padding-left: 20px;
+  background-color: #555555;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.item-list li:hover {
+  background-color: #444444;
+}

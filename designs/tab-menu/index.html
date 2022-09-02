@@ -8,22 +8,51 @@
 
   <link rel="stylesheet" href="./tab-menu.css">
 
-  <title>Document</title>
+  <title>탭 메뉴</title>
 </head>
 
 <body>
   <div id="menu-box">
     <input type="radio" id="tab1" name="tab" checked hidden>
-    <label for="tab1">탭 1</label>
+    <label for="tab1">대충 회원 로그인</label>
 
     <input type="radio" id="tab2" name="tab" hidden>
-    <label for="tab2">탭 2</label>
+    <label for="tab2">대충 비회원 로그인</label>
 
     <div id="content1" class="hidden content">
-      <p>탭 1 내용</p>
+      <form>
+        <div>
+          <label for="id">아이디 : </label>
+          <input type="text" name="id" id="id">
+        </div>
+
+        <div>
+          <label for="password">비밀번호 : </label>
+          <input type="password" name="password" id="password">
+        </div>
+        <button>로그인</button>
+      </form>
     </div>
+
     <div id="content2" class="hidden content">
-      <p>탭 2 내용</p>
+      <form>
+        <div>
+          <label for="order-name">이름 : </label>
+          <input type="text" name="orderName" id="order-name">
+        </div>
+
+        <div>
+          <label for="order-number">주문번호 : </label>
+          <input type="text" name="orderNumber" id="order-number">
+        </div>
+
+        <div>
+          <label for="order-password">주문 비밀번호 : </label>
+          <input type="password" name="orderPassword" id="order-password">
+        </div>
+
+        <button>비회원 로그인</button>
+      </form>
     </div>
   </div>
 </body>
