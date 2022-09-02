@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./sighup-form.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <form>
+      <fieldset class="required_field">
+        <legend>필수 입력사항</legend>
+
+        <label>
+          성명 <input type="text" name="userName" required>
+        </label>
+        <label>
+          닉네임 <input type="text" name="userNickName" required>
+        </label>
+        <label>
+          이메일 <input type="email" name="userEmail" required>
+        </label>
+        <label>
+          비밀번호 <input type="password" name="userPassword" required>
+        </label>
+        <label>
+          비밀번호 확인 <input type="password" name="userPasswordConfirm" required>
+        </label>
+      </fieldset>
+
+      <fieldset class="choose_field">
+        <legend>선택 입력사항</legend>
+
+        <div>
+          <input type="radio" name="userGender" id="male" value="male">
+          <label for="male">남성</label>
+
+          <input type="radio" name="userGender" id="female" value="female">
+          <label for="female">여성</label>
+
+          <input type="radio" name="userGender" id="none" value="none">
+          <label for="none">안알려줌</label>
+        </div>
+
+        <p><label for="birth">생년월일</label></p>
+        <div>
+          <input type="text" name="birth[]" id="birth">년
+          <input type="text" name="birth[]">월
+          <input type="text" name="birth[]">일
+        </div>
+      </fieldset>
+
+      <button>회원가입</button>
+    </form>
+  </div>
+</body>
+
+</html>
