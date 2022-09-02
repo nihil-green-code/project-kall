@@ -1,0 +1,59 @@
+/* ==================== 초기화 ==================== */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* ==================== 전체 레이아웃 ==================== */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==================== 로그인 폼 ==================== */
+form {
+  border: 1px solid #dddddd;
+  padding: 10px;
+}
+
+form div:nth-child(1) {
+  margin-bottom: 5px;
+}
+
+label {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+input {
+  all: unset;
+  background-color: #eeeeee;
+  padding: 10px;
+}
+
+input::placeholder {
+  opacity: 0.4;
+}
+
+input:hover {
+  background-color: #dddddd;
+}
+
+button {
+  all: unset;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #333333;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* ====================  ==================== */

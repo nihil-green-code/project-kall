@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./login-form.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <form name="loginInfo">
+      <div>
+        <label for="user-email">이메일 </label>
+        <input type="email" name="userEmail" id="user-email" placeholder="이메일 입력" required>
+      </div>
+
+      <div>
+        <label for="user-password">비밀번호 </label>
+        <input type="password" name="userPassword" id="user-password" placeholder="비밀번호 입력" minlength="8" maxlength="20"
+          required>
+      </div>
+      <button>로그인</button>
+    </form>
+  </div>
+  <a href="/">메인으로</a>
+</body>
+
+</html>
