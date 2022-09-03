@@ -1,4 +1,179 @@
+/* ==================== 초기화 ==================== */
 * {
   margin: 0;
   padding: 0;
+}
+
+fieldset {
+  all: unset;
+}
+
+/* ==================== 레이아웃 ==================== */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+fieldset {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+fieldset legend {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #33333350;
+  padding: 10px 0;
+  font-size: 1.4rem;
+}
+
+/* 효율적으로 텍스트를 숨길 수 있다. */
+/* .hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0.0, 0.0, 0.0);
+} */
+
+/* ==================== 필수 입력란 ==================== */
+.required_field>div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.required_field>div:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.required_field label {
+  width: 110px;
+  margin-right: 5px;
+}
+
+.required_field input {
+  all: unset;
+  flex: 1;
+  background-color: #eeeeee;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.required_field input:focus {
+  background-color: #e8f2ff;
+}
+
+/* ==================== 선택 입력란 ==================== */
+.choose_field input[type="radio"] {
+  display: none;
+}
+
+.choose_field div.gender {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.choose_field div.gender span {
+  display: inline-block;
+  width: 110px;
+}
+
+.choose_field input[type="radio"]+label {
+  display: inline-block;
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background-color: #eeeeee;
+  color: #333333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.choose_field input[type="radio"]+label:not(:first-of-type) {
+  margin-left: 10px;
+}
+
+.choose_field input[type="radio"]:checked+label {
+  background-color: #e8f2ff;
+  color: #59a1ff;
+}
+
+.choose_field div.gender,
+.choose_field div.birth {
+  margin-bottom: 10px;
+}
+
+.choose_field div.birth,
+.choose_field div.phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.choose_field div.birth label,
+.choose_field div.phone label {
+  width: 110px;
+}
+
+.choose_field div.birth input,
+.choose_field div.phone input {
+  all: unset;
+  flex: 1;
+  background-color: #eeeeee;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.choose_field div.birth input:not(:first-of-type) {
+  margin-left: 10px;
+}
+
+.choose_field div.birth input:focus,
+.choose_field div.phone input[readonly],
+.choose_field div.phone input:focus {
+  background-color: #e8f2ff;
+}
+
+.choose_field div.phone input[readonly] {
+  color: #59a1ff;
+}
+
+.choose_field div.phone span {
+  margin: 0 10px;
+}
+
+/* ==================== 회원가입 버튼 ==================== */
+button {
+  all: unset;
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #62a4f9;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2676e0;
 }

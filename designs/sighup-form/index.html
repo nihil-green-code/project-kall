@@ -7,52 +7,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./sighup-form.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 
   <title>Document</title>
 </head>
 
 <body>
-  <div>
+  <div class="form">
     <form>
       <fieldset class="required_field">
-        <legend>필수 입력사항</legend>
+        <legend class="hidden">필수 입력란</legend>
 
-        <label>
-          성명 <input type="text" name="userName" required>
-        </label>
-        <label>
-          닉네임 <input type="text" name="userNickName" required>
-        </label>
-        <label>
-          이메일 <input type="email" name="userEmail" required>
-        </label>
-        <label>
-          비밀번호 <input type="password" name="userPassword" required>
-        </label>
-        <label>
-          비밀번호 확인 <input type="password" name="userPasswordConfirm" required>
-        </label>
+        <div>
+          <label for="user-name">성명</label>
+          <input type="text" id="user-name" name="userName" required>
+        </div>
+        <div>
+          <label for="user-nickname">닉네임</label>
+          <input type="text" id="user-nickname" name="userNickName" required>
+        </div>
+        <div>
+          <label for="user-email">이메일</label>
+          <input type="email" id="user-email" name="userEmail" required>
+        </div>
+        <div>
+          <label for="user-password">비밀번호</label>
+          <input type="password" id="user-password" name="userPassword" required>
+        </div>
+        <div>
+          <label for="user-password-confirm">비밀번호 확인</label>
+          <input type="password" id="user-password-confirm" name="userPasswordConfirm" required>
+        </div>
       </fieldset>
 
       <fieldset class="choose_field">
-        <legend>선택 입력사항</legend>
+        <legend class="hidden">선택 입력란</legend>
 
-        <div>
+        <div class="gender">
+          <span>성별</span>
           <input type="radio" name="userGender" id="male" value="male">
-          <label for="male">남성</label>
+          <label for="male"><i class="fas fa-check"></i> 남성</label>
 
           <input type="radio" name="userGender" id="female" value="female">
-          <label for="female">여성</label>
+          <label for="female"><i class="fas fa-check"></i> 여성</label>
 
           <input type="radio" name="userGender" id="none" value="none">
-          <label for="none">안알려줌</label>
+          <label for="none"><i class="fas fa-check"></i> 안알려줌</label>
         </div>
 
-        <p><label for="birth">생년월일</label></p>
-        <div>
-          <input type="text" name="birth[]" id="birth">년
-          <input type="text" name="birth[]">월
-          <input type="text" name="birth[]">일
+        <div class="birth">
+          <label for="birth">생년월일</label>
+          <input type="text" name="birth[]" id="birth" size="1" maxlength="4">년
+          <input type="text" name="birth[]" size="1" maxlength="2">월
+          <input type="text" name="birth[]" size="1" maxlength="2">일
+        </div>
+
+        <div class="phone">
+          <label for="phone">핸드폰 번호</label>
+          <input type="text" name="phone[]" value="010" size="1" readonly>
+          <span>-</span>
+          <input type="text" id="phone" name="phone[]" size="1" minlength="4" maxlength="4">
+          <span>-</span>
+          <input type="text" name="phone[]" size="1" minlength="4" maxlength="4">
         </div>
       </fieldset>
 
