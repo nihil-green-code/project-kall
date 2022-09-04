@@ -1,0 +1,109 @@
+/* ==================== 메인 ==================== */
+
+main {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.image-container {
+  padding: 20px 0;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: 600px;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.image.first {
+  background-color: cadetblue;
+}
+
+.image.second {
+  background-color: darkcyan;
+}
+
+.image.third {
+  background-color: greenyellow;
+}
+
+.slide-button {
+  position: absolute;
+  bottom: 30px;
+  border: 1px solid #333333;
+  background-color: #33333350;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.slide-button.next {
+  right: 10px;
+}
+
+.slide-button.prev {
+  right: 55px;
+}
+
+.slide-button i {
+  color: #ffffff;
+}
+
+main section h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333333;
+  margin-bottom: 20px;
+}
+
+main section .item-list {
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+main section .item-list .item {
+  background-color: #eeeeee;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.item .item-image {
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 300px;
+  background-color: #666666;
+  margin-bottom: 10px;
+}
+
+.item .item-name strong {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.item .item-price {
+  opacity: 0.8;
+}
+
+main section .item-list .item {
+  width: 25%;
+}
+
+/* main section .item-list .item:not(:nth-child(4n)) {
+  margin-right: 10px;
+} */
+
+/* ==================== 메인 종료 ==================== */

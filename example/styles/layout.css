@@ -5,7 +5,7 @@ header {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .title-logo span {
@@ -121,88 +121,54 @@ nav {
 
 /* ==================== 메뉴 종료 ==================== */
 
-/* ==================== 메인 ==================== */
+/* ==================== 푸터 ==================== */
 
-main {
-  width: 1024px;
-  margin: 0 auto;
-}
-
-div.image-container {
-  padding: 20px 0;
-  border-top: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  margin-bottom: 50px;
-}
-
-.image1 {
-  line-height: 500px;
-  text-align: center;
-  background-color: beige;
-  margin: 20px 0;
-  font-size: 2rem;
-}
-
-section h2 {
-  width: 150px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #666666;
-  margin-bottom: 20px;
-}
-
-.item-list {
+footer {
+  margin-top: 50px;
   background-color: #eeeeee;
+  text-align: center;
+  padding: 10px;
+}
+
+footer .links {
+  margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 20px;
 }
 
-.item {
-  display: inline-block;
-  flex: 1;
-  padding: 20px;
-  background-color: #dddddd;
+footer .links a {
+  color: #1881ea;
 }
 
-.item:not(:last-child) {
-  margin-right: 20px;
+footer .links a:hover {
+  color: #0b64bd;
+  text-decoration: underline;
 }
 
-.item .item-image {
-  background-color: #333333;
-  text-align: center;
-  line-height: 300px;
-  color: white;
-  font-size: 2rem;
-  font-weight: 300;
+footer .links span,
+footer span {
+  margin: 0 5px;
 }
 
-.item p.item-name {
-  margin-top: 10px;
-  padding-bottom: 5px;
+footer .site-address {
+  margin-bottom: 5px;
+  font-style: normal;
 }
 
-.item p.item-name strong {
-  font-weight: 400;
+footer .site-info p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.item p.item-price {
-  font-style: italic;
-  border-top: 1px solid #333333;
-  padding-top: 5px;
+footer .site-info p:not(:last-child) {
+  margin-bottom: 5px;
 }
 
-/* ==================== 메인 종료 ==================== */
-
-/* ==================== 푸터 ==================== */
-
-footer {
-  line-height: 150px;
-  margin-top: 50px;
-  background-color: #eeeeee;
-  text-align: center;
+footer .site-info p:nth-child(2) {
+  margin-bottom: 10px;
 }
 
 /* ==================== 푸터 종료 ==================== */
