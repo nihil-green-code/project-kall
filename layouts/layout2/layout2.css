@@ -126,7 +126,13 @@ nav {
 main {
   width: 1024px;
   margin: 0 auto;
-  border-top: 1px solid #666666;
+}
+
+div.image-container {
+  padding: 20px 0;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  margin-bottom: 50px;
 }
 
 .image1 {
@@ -135,11 +141,6 @@ main {
   background-color: beige;
   margin: 20px 0;
   font-size: 2rem;
-}
-
-section {
-  border-top: 1px solid #666666;
-  padding-top: 50px;
 }
 
 section h2 {
@@ -162,7 +163,8 @@ section h2 {
   display: inline-block;
   flex: 1;
   padding: 20px;
-  background-color: #dddddd;
+  background-color: #ffffff;
+  border: 1px solid #33333330;
 }
 
 .item:not(:last-child) {
@@ -198,6 +200,7 @@ section h2 {
 /* 푸터 */
 
 footer {
+  width: 100%;
   line-height: 150px;
   margin-top: 50px;
   background-color: #eeeeee;
