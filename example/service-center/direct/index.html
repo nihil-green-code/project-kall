@@ -167,19 +167,44 @@
 
   <main>
     <h2>고객센터</h2>
-    <div class="sc-container">
+    <div class="sc-container reverse">
       <section>
-        <h3>1:1 문의</h3>
+        <h3 class="underline">1:1 문의</h3>
 
         <form name="direct">
           <div>
-            <input type="text" name="title" placeholder="제목">
+            <label for="email">이메일</label>
+            <input type="text" id="email" name="email" placeholder="example@email.com" required>
           </div>
 
           <div>
+            <label for="phone">핸드폰 번호</label>
+            <input type="text" id="phone" name="phone" placeholder="01012345678" required>
+          </div>
+
+          <div>
+            <label for="title">제목</label>
+            <input type="text" id="title" name="title" placeholder="제목을 입력해주세요." required>
+          </div>
+
+          <div>
+            <label for="category">카테고리</label>
+            <select name="category" id="category">
+              <option value="sighin">로그인 / 계정</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="email">문의내용</label>
             <textarea name="description" cols="30" rows="10" placeholder="문의 내용">
-asdkljhaf;khasfjklafk
+문의 내용 템플릿 여기에 대충 적어둠.
             </textarea>
+          </div>
+
+          <div class="file-upload">
+            <input type="file" name="file" id="file" class="hidden">
+            <input type="text" placeholder="첨부파일" readonly>
+            <label for="file">파일 첨부</label>
           </div>
 
           <button>문의하기</button>

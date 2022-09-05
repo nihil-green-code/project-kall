@@ -1,4 +1,7 @@
-/* ====================  ==================== */
+/* ==================== 고객센터 ==================== */
+main {
+  width: 900px;
+}
 
 main h2 {
   padding-bottom: 20px;
@@ -15,15 +18,31 @@ main .sc-container {
   justify-content: center;
 }
 
+main .sc-container.reverse {
+  flex-direction: row-reverse;
+}
+
 .sc-container section {
   width: 100%;
   margin-right: 20px;
+}
+
+.sc-container.reverse section {
+  margin-right: 0;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px solid #33333330;
 }
 
 .sc-container section h3 {
   font-size: 1.4rem;
   font-weight: 700;
   padding-bottom: 20px;
+}
+
+.sc-container section h3.underline {
+  border-bottom: 1px solid #33333330;
+  margin-bottom: 20px;
 }
 
 .sc-container section p {
@@ -58,21 +77,26 @@ main .sc-container {
 
 .sc-container aside {
   text-align: center;
-  padding: 10px;
-  background-color: #eeeeee;
 }
 
 .sc-container aside a {
   display: block;
   width: 150px;
   text-align: left;
-  padding: 10px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #33333330;
+}
+
+.sc-container aside a:hover {
+  text-decoration: underline;
 }
 
 .sc-container aside li:not(:last-child) a {
+  margin-bottom: 10px;
+}
+
+.sc-container form label {
+  display: block;
   margin-bottom: 5px;
+  font-size: 1.2rem;
 }
 
 .sc-container form input[type="text"] {
@@ -80,19 +104,65 @@ main .sc-container {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  background-color: #eeeeee;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.sc-container form input[type="text"]:focus,
+.sc-container form select:focus {
   border: 1px solid #333333;
-  margin-bottom: 20px;
+}
+
+.sc-container form select {
+  all: unset;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  appearance: auto;
+  background-color: #eeeeee;
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 10px;
 }
 
 .sc-container form textarea {
   all: unset;
+  padding: 10px;
   width: 100%;
   box-sizing: border-box;
   font-size: 1.5rem;
+  margin-bottom: 10px;
+  background-color: #eeeeee;
+  color: #333333;
+}
+
+.sc-container form .file-upload {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.sc-container form .file-upload input {
+  flex: 3;
+  margin-bottom: 0;
+}
+
+.sc-container form .file-upload label {
+  all: unset;
+  margin-left: 10px;
+  background-color: #666666;
+  color: #ffffff;
   padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #333333;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  flex: 1;
 }
 
 .sc-container form button {
@@ -102,13 +172,24 @@ main .sc-container {
   box-sizing: border-box;
   padding: 20px 10px;
   text-align: center;
-  background-color: #539aff;
+  background-color: #666666;
   color: #ffffff;
   cursor: pointer;
 }
 
-.sc-container form button:hover {
-  background-color: #327ade;
+.sc-container form button:hover,
+.sc-container form .file-upload label:hover {
+  background-color: #555555;
 }
 
-/* ====================  ==================== */
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* ==================== 고객센터 종료 ==================== */
