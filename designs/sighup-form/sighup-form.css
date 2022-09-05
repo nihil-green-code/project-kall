@@ -75,6 +75,14 @@ fieldset legend {
   background-color: #e8f2ff;
 }
 
+.required_field input:valid {
+  background-color: #e8f2ff;
+}
+
+.required_field input:invalid {
+  background-color: #ffd3d3;
+}
+
 /* ==================== 선택 입력란 ==================== */
 .choose_field input[type="radio"] {
   display: none;
