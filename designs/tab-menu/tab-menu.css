@@ -20,7 +20,10 @@ body {
 /* ==================== 탭 메뉴 박스 디자인 ==================== */
 div#menu-box {}
 
+/* 취향에 따라 건드리려면 건드려도 됨 */
+
 /* ==================== 라벨 디자인 ==================== */
+/* 클릭되지 않은 상태의 라벨 (기본상태) */
 div#menu-box>label {
   display: block;
   width: 200px;
@@ -34,6 +37,9 @@ div#menu-box>label {
   box-sizing: border-box;
 }
 
+/* 인풋이 체크되어있을 때, 형제태그인 라벨을 선택 */
+/* + 결합자로 바로 아래 있는 라벨을 선택 */
+/* 이건 클릭되어있을 때의 디자인 */
 div#menu-box>input[type="radio"]:checked+label {
   background-color: #f3f3f3;
   color: #333333;
@@ -42,15 +48,19 @@ div#menu-box>input[type="radio"]:checked+label {
 }
 
 /* ==================== 탭 컨텐츠 디자인 ==================== */
+/* 탭의 내용들은 일단 숨겨줌. */
 div.hidden {
   display: none;
 }
 
+/* 여기가 중요. 탭이 체크되었을 때 해당 컨텐츠를 보이게끔 만듬. */
+/* 일반 형제 결합자(~)와 아이디 선택자를 이용하면 딱 하나를 보이게끔 할 수 있음. */
 input#tab1:checked~div#content1,
 input#tab2:checked~div#content2 {
   display: block;
 }
 
+/* 내용물의 디자인 역시 취사선택. */
 div.content {
   padding: 10px;
   clear: both;
@@ -58,3 +68,5 @@ div.content {
   border-top: none;
   height: 100px;
 }
+
+/* 해당 내용은 탭에 대한 내용일 뿐이고 탭 내용 내부의 항목들은 별도로 디자인을 해야함. */
