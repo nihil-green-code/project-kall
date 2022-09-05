@@ -11,7 +11,7 @@ header {
 
 .title-logo span {
   display: inline-block;
-  text-indent: -9999em;
+  /* text-indent: -9999em; */
 }
 
 .title-logo img {
