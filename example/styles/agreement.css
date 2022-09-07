@@ -8,9 +8,14 @@ main h2 {
   font-size: 2rem;
 }
 
-.agreement {
+.agreement,
+.privacy {
   background-color: #eeeeee;
   padding: 20px;
+}
+
+.privacy pre {
+  white-space: pre-wrap;
 }
 
 .agreement p:not(:last-child) {
