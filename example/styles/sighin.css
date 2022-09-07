@@ -6,77 +6,135 @@ main h2 {
   border-bottom: 1px solid #333333;
   font-weight: 700;
   font-size: 2rem;
-}
-
-form.sighin-form {
-  width: 40%;
-  margin: 0 auto;
-  padding: 150px 0;
-}
-
-form.sighin-form input[type="text"],
-form.sighin-form input[type="password"] {
-  all: unset;
-  background-color: #eeeeee;
-  padding: 10px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-form.sighin-form input[type="text"]:focus,
-form.sighin-form input[type="password"]:focus {
-  border: 1px solid #539aff;
-}
-
-form.sighin-form input:nth-of-type(1) {
-  margin-bottom: 10px;
-}
-
-form.sighin-form input::placeholder {
-  opacity: 0.6;
-}
-
-.sighin-option {
-  margin-bottom: 10px;
-  display: inline-block;
-  width: 100%;
-}
-
-.sighin-option div:nth-child(1) {
-  margin-right: 10px;
-}
-
-.sighin-option div:nth-child(-n+2) {
-  float: left;
-}
-
-.sighin-option div:nth-child(3) {
-  float: right;
-}
-
-.sighin-option div a {
-  color: #1881ea;
-}
-
-.sighin-option div a:hover {
-  color: #0b64bd;
-  text-decoration: underline;
-}
-
-form.sighin-form button {
-  all: unset;
-  padding: 20px 10px;
-  background-color: #539aff;
-  color: #ffffff;
-  font-size: 1.5rem;
-  width: 100%;
-  box-sizing: border-box;
   text-align: center;
+}
+
+/* 기본 설정 */
+main {
+  margin: 0 auto;
+}
+
+.login_page {
+  margin: auto;
+  text-align: center;
+  width: calc(1280px / 3);
+}
+
+/* .customer_login,
+.unknown_login {
+  padding: 5px;
+} */
+
+/* 밑줄 삭제 글씨 black */
+main a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* 입력 박스 관련 지정 */
+.login_ID>input,
+.login_password>input,
+.unknown_login_orderNum>input,
+.unknown_login_email>input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  background-color: #eeeeee;
+}
+
+.login_ID>input:focus,
+.login_password>input:focus,
+.unknown_login_orderNum>input:focus,
+.unknown_login_email>input:focus {
+  border: 1px solid #666666;
+  outline: none;
+}
+
+.login_submit,
+.find_unknown_order,
+.order_submit {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  border: none;
+  margin-bottom: 10px;
+  background-color: #666666;
+  color: white;
   cursor: pointer;
 }
 
-form.sighin-form button:hover {
-  background-color: #327ade;
+
+button:hover {
+  background-color: #555555;
 }
+
+
+.save_ID {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.find_info {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.find_info>a {
+  width: 100%;
+  text-decoration: underline;
+  color: #666666;
+  font-size: 1.2rem;
+}
+
+.find_info>a:hover {
+  color: #555555;
+}
+
+.join_sns {
+  margin-bottom: 30px;
+}
+
+.join_sns h3 {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333333;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.join_sns a {
+  background-color: #FAE100;
+  display: block;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #371D1E;
+}
+
+.login-question {
+  margin-bottom: 30px;
+}
+
+.login-question a {
+  color: #666666;
+  text-decoration: underline;
+}
+
+.login-question a:hover {
+  color: #555555;
+}
+
+/* 비회원 주문 */
+
+/* .unknown_login {
+  display: none;
+} */
+
+/* 비회원 주문조회 클릭 시 밑에 뜨게 하고 싶음 */
 
 /* ==================== 로그인 종료 ==================== */
