@@ -11,7 +11,7 @@ header {
 
 .title-logo span {
   display: inline-block;
-  /* text-indent: -9999em; */
+  text-indent: -9999em;
 }
 
 .title-logo img {
@@ -102,24 +102,6 @@ nav {
 }
 
 /* ==================== 서브 메뉴 종료 ==================== */
-/* ==================== 서브 메뉴 2 ==================== */
-.sub-nav2 {
-  border: 1px solid #dddddd;
-}
-
-.sub-nav2>li {
-  padding: 10px 0;
-}
-
-.sub-nav2>li:not(:last-child) {
-  border-bottom: 1px solid #dddddd;
-}
-
-.sub-nav2>li a {
-  color: #333333;
-}
-
-/* ==================== 서브 메뉴 2 종료 ==================== */
 
 /* ==================== 메뉴 종료 ==================== */
 
