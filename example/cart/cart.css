@@ -1,0 +1,17 @@
+div.cart {
+  display: flex;
+  gap: 50px;
+}
+
+div.cart div.left {
+  background-color: #eeeeee;
+  width: 100%;
+
+}
+
+div.cart div.right {
+  background-color: #eeeeee;
+  width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+}
