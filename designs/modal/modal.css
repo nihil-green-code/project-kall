@@ -16,7 +16,7 @@ body {
 /* ==================== 모달 버튼 ==================== */
 label.open {
   display: inline-block;
-  background-color: #555555;
+  background-color: var(--c-point-h);
   width: 100px;
   text-align: center;
   vertical-align: middle;

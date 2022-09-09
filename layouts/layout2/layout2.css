@@ -67,7 +67,7 @@ nav {
 }
 
 .main-nav li:hover {
-  background-color: #eeeeee;
+  background-color: var(--white-e5);
 }
 
 .main-nav li:hover .sub-nav {
@@ -146,12 +146,12 @@ div.image-container {
 section h2 {
   width: 150px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #666666;
+  border-bottom: 1px solid var(--c-point);
   margin-bottom: 20px;
 }
 
 .item-list {
-  background-color: #eeeeee;
+  background-color: var(--white-e5);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -201,7 +201,7 @@ section h2 {
 footer {
   line-height: 150px;
   margin-top: 50px;
-  background-color: #eeeeee;
+  background-color: var(--white-e5);
   text-align: center;
 }
 

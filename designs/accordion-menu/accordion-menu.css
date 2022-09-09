@@ -62,7 +62,7 @@ input[type="checkbox"]:checked~ul {
 .item-list li {
   padding: 10px;
   padding-left: 20px;
-  background-color: #555555;
+  background-color: var(--c-point-h);
   color: #ffffff;
   cursor: pointer;
 }

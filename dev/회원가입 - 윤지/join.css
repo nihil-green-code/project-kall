@@ -1,83 +1,85 @@
-*{
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
+* {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
 }
 
-legend{
-    width: 100%; 
-    display: block;
-    font-weight: bold;
-    font-size: 30px;
-    margin: 30px 0;
-    border-bottom: 1px solid;
+legend {
+  width: 100%;
+  display: block;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 30px 0;
+  border-bottom: 1px solid;
 }
 
-fieldset{
-    /* all: unset; */
-    /* width: 100%; */
-    padding: 10px;
-    box-sizing: border-box;
-    width: 500px;
+fieldset {
+  /* all: unset; */
+  /* width: 100%; */
+  padding: 10px;
+  box-sizing: border-box;
+  width: 500px;
 }
 
 fieldset:not(div) {
-    border: none;
+  border: none;
 }
 
 
-input, select{
-    margin: 10px;
+input,
+select {
+  margin: 10px;
 }
 
 
 
 #required input {
-    all: unset;
-    padding: 10px;
-    margin: 10px;
-    background-color:#eeeeee;
+  all: unset;
+  padding: 10px;
+  margin: 10px;
+  background-color: var(--white-e5);
 }
 
-#required div{
-    display: flex;
-    width: 500px;
-    height: 60px;
-    flex-direction: row;
-    align-items: center;
+#required div {
+  display: flex;
+  width: 500px;
+  height: 60px;
+  flex-direction: row;
+  align-items: center;
 }
 
-#required label{
-    margin: 0;
-    width: 250px;
-    align-items: flex-start;
+#required label {
+  margin: 0;
+  width: 250px;
+  align-items: flex-start;
 }
 
-#required input{
-    margin: 0;
-    width: 100%;
-    align-self: flex-end;
+#required input {
+  margin: 0;
+  width: 100%;
+  align-self: flex-end;
 }
 
 /*회원가입 버튼 */
 /*백그라운드 색 바꾸기 */
 
-#join{
-    all: unset;
-    margin-top: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #666666;
-    text-align: center;
-    padding: 20px 10px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #ffffff;
-    cursor: pointer;
+#join {
+  all: unset;
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--c-point);
+  border: 1px solid var(--c-point-h);
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
 }
 
-#join:hover{
-    background-color: #555555;
+#join:hover {
+  background-color: var(--c-point-h);
 }
 
 

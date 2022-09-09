@@ -110,64 +110,26 @@
   <main>
     <!-- ==================== 윤지 코드 ==================== -->
     <h2>장바구니</h2>
-    <div class="flow">
-      <p class="now">01 장바구니</p>
-      <p class="now arrow"></p>
-      <p class="not-now">02 주문서작성 결제</p>
-      <p class="not-now arrow"></p>
-      <p class="not-now">03 주문완료</p>
+    <div class="cart">
+      <div class="left">
+        <div>상품 1</div>
+        <div>상품 2</div>
+        <div>상품 3</div>
+      </div>
+      <div class="right">
+        <div>
+          <p>총 상품 금액 <span>12000원</span></p>
+          <p>배송비 <span>0원</span></p>
+          <p>할인 금액 <span>-2000원</span></p>
+        </div>
+
+        <p>결제 금액</p>
+        <p><span>10000원</span></p>
+
+        <button>선택 상품 구매</button>
+        <button>전체 상품 구매</button>
+      </div>
     </div>
-
-    <form action="#">
-      <table class="item-table">
-        <colgroup>
-          <col style="width:3%">
-          <col>
-          <col style="width:10%">
-          <col style="width:10%">
-        </colgroup>
-
-        <thead>
-          <tr>
-            <th>
-              <input type="checkbox" id="all-item">
-            </th>
-            <th>상품/옵션 정보</th>
-            <th scope="col">수량</th>
-            <th scope="col">상품금액</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td><input type="checkbox" name="item[]" value="item1"></td>
-            <td>레터링케이크</td>
-            <td>1</td>
-            <td>35,000</td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" name="item[]" value="item2"></td>
-            <td>레터링케이크</td>
-            <td>1</td>
-            <td>35,000</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div id="cash">
-        <p><span>상품 총 금액</span> 70,000원</p>
-        <p><span>배송비</span> 3,000원</p>
-        <p><span>할인</span> -2,400원</p>
-
-        <p id="all">합계 70,600원</p>
-      </div>
-
-      <div class="buttons">
-        <input type="submit" value="선택 항목 삭제">
-        <input type="submit" value="선택 항목 주문">
-        <input type="submit" value="모든 항목 주문">
-      </div>
-    </form>
   </main>
 
   <footer>

@@ -6,7 +6,8 @@ main h2 {
   border-bottom: 1px solid #333333;
   font-weight: 700;
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
+  color: var(--black-3);
 }
 
 /* 기본 설정 */
@@ -28,9 +29,12 @@ main {
 /* 밑줄 삭제 글씨 black */
 main a {
   text-decoration: none;
-  color: black;
+  color: var(--black-3);
 }
 
+.login_ID {
+  color: var(--black-3);
+}
 
 /* 입력 박스 관련 지정 */
 .login_ID>input,
@@ -43,14 +47,15 @@ main a {
   font-size: 1.2rem;
   box-sizing: border-box;
   margin-bottom: 10px;
-  background-color: #eeeeee;
+  color: var(--black-3);
+  background-color: var(--white-e5);
 }
 
 .login_ID>input:focus,
 .login_password>input:focus,
 .unknown_login_orderNum>input:focus,
 .unknown_login_email>input:focus {
-  border: 1px solid #666666;
+  border: 1px solid var(--c-point);
   outline: none;
 }
 
@@ -63,16 +68,15 @@ main a {
   box-sizing: border-box;
   border: none;
   margin-bottom: 10px;
-  background-color: #666666;
-  color: white;
+  background-color: var(--c-point);
+  color: var(--c-point-h);
   cursor: pointer;
 }
 
-
 button:hover {
-  background-color: #555555;
+  background-color: var(--c-point-h);
+  color: #ffffff;
 }
-
 
 .save_ID {
   text-align: left;
@@ -88,12 +92,12 @@ button:hover {
 .find_info>a {
   width: 100%;
   text-decoration: underline;
-  color: #666666;
+  color: var(--c-link);
   font-size: 1.2rem;
 }
 
 .find_info>a:hover {
-  color: #555555;
+  color: var(--c-link-h);
 }
 
 .join_sns {
@@ -104,8 +108,10 @@ button:hover {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #333333;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
+  text-align: left;
+  color: var(--black-3);
 }
 
 .join_sns a {
@@ -121,12 +127,12 @@ button:hover {
 }
 
 .login-question a {
-  color: #666666;
+  color: var(--c-link);
   text-decoration: underline;
 }
 
 .login-question a:hover {
-  color: #555555;
+  color: var(--c-link-h);
 }
 
 /* 비회원 주문 */

@@ -1,0 +1,144 @@
+/* ==================== 장바구니 ==================== */
+main {
+  color: var(--black-3);
+}
+
+main h2 {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333333;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+main div.flow {
+  font-size: 1.5rem;
+  display: flex;
+  line-height: 70px;
+  background-color: var(--white-e5);
+  margin-bottom: 50px;
+}
+
+main div.flow p {
+  flex: 1;
+  text-align: center;
+}
+
+main div.flow p.arrow {
+  flex: 0 0 70px;
+  position: relative;
+  overflow: hidden;
+  z-index: auto;
+}
+
+main div.flow p.arrow::before {
+  content: '';
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  rotate: 45deg;
+  left: -70%;
+  border: 1px solid var(--c-point);
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+main div.flow p.arrow.now::before {
+  background-color: var(--c-point);
+}
+
+main div.flow p.now:not(.arrow) {
+  background-color: var(--c-point);
+  color: var(--c-point-h);
+  font-weight: 900;
+}
+
+main div.flow p.not-now {
+  color: #888888;
+}
+
+/***/
+table.item-table {
+  border: none;
+  text-align: center;
+  width: 100%;
+  background-color: var(--white-e5);
+  border: 5px solid var(--c-point);
+  box-sizing: border-box;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+table.item-table th {
+  background-color: var(--c-point);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+table.item-table td {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+table.item-table th:not(:last-of-type),
+table.item-table td:not(:last-of-type) {
+  border-right: 1px solid #ffffff;
+}
+
+table.item-table tr:not(:last-of-type) {
+  border-bottom: 1px dashed var(--c-point);
+}
+
+#cash {
+  border: none;
+  background-color: var(--white-e5);
+  border: 2px solid var(--c-point-h);
+  box-sizing: border-box;
+  text-align: right;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+
+#cash>p {
+  padding: 10px;
+}
+
+#cash>p:not(:last-of-type) {
+  border-bottom: 1px dashed var(--c-point);
+}
+
+#cash>p span {
+  font-weight: 700;
+}
+
+form>div>input {
+  all: unset;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--c-point);
+  color: var(--c-point-h);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+div.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+#all {
+  background-color: var(--c-point-h);
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+form>div>input:hover {
+  background-color: var(--c-point-h);
+  color: #ffffff;
+}

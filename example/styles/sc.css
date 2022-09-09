@@ -1,6 +1,7 @@
-/* ==================== 고객센터 ==================== */
+/* ==================== 전체 레이아웃 ==================== */
 main {
   width: 900px;
+  color: var(--black-3);
 }
 
 main h2 {
@@ -13,21 +14,13 @@ main h2 {
 
 main .sc-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: start;
   justify-content: center;
 }
 
-main .sc-container.reverse {
-  flex-direction: row-reverse;
-}
-
 .sc-container section {
   width: 100%;
-  margin-right: 20px;
-}
-
-.sc-container.reverse section {
   margin-right: 0;
   margin-left: 20px;
   padding-left: 20px;
@@ -45,6 +38,27 @@ main .sc-container.reverse {
   margin-bottom: 20px;
 }
 
+.sc-container aside {
+  text-align: center;
+}
+
+.sc-container aside a {
+  display: block;
+  width: 150px;
+  text-align: left;
+  color: var(--black-3);
+}
+
+.sc-container aside a:hover {
+  text-decoration: underline;
+  color: var(--black-2);
+}
+
+.sc-container aside li:not(:last-child) a {
+  margin-bottom: 10px;
+}
+
+/* ==================== 가이드, 질문 ==================== */
 .sc-container section p {
   display: none;
   text-align: justify;
@@ -71,28 +85,11 @@ main .sc-container.reverse {
 .sc-container section input[type="radio"]:checked+label+p {
   display: block;
   padding: 20px;
-  background-color: #eeeeee;
+  background-color: var(--white-e5);
   border-bottom: 1px solid #333333;
 }
 
-.sc-container aside {
-  text-align: center;
-}
-
-.sc-container aside a {
-  display: block;
-  width: 150px;
-  text-align: left;
-}
-
-.sc-container aside a:hover {
-  text-decoration: underline;
-}
-
-.sc-container aside li:not(:last-child) a {
-  margin-bottom: 10px;
-}
-
+/* ==================== 1:1 문의 ==================== */
 .sc-container form label {
   display: block;
   margin-bottom: 5px;
@@ -104,15 +101,16 @@ main .sc-container.reverse {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
-  font-size: 1.5rem;
-  background-color: #eeeeee;
+  font-size: 1.2rem;
+  background-color: var(--white-e5);
   color: #333333;
   margin-bottom: 10px;
 }
 
 .sc-container form input[type="text"]:focus,
-.sc-container form select:focus {
-  border: 1px solid #333333;
+.sc-container form select:focus,
+.sc-container form textarea:focus {
+  border: 1px solid var(--c-point);
 }
 
 .sc-container form select {
@@ -121,8 +119,8 @@ main .sc-container.reverse {
   padding: 10px;
   box-sizing: border-box;
   appearance: auto;
-  background-color: #eeeeee;
-  font-size: 1.5rem;
+  background-color: var(--white-e5);
+  font-size: 1.2rem;
   color: #333333;
   margin-bottom: 10px;
 }
@@ -132,9 +130,9 @@ main .sc-container.reverse {
   padding: 10px;
   width: 100%;
   box-sizing: border-box;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 10px;
-  background-color: #eeeeee;
+  background-color: var(--white-e5);
   color: #333333;
 }
 
@@ -143,7 +141,7 @@ main .sc-container.reverse {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .sc-container form .file-upload input {
@@ -154,32 +152,33 @@ main .sc-container.reverse {
 .sc-container form .file-upload label {
   all: unset;
   margin-left: 10px;
-  background-color: #666666;
+  background-color: var(--c-point);
   color: #ffffff;
   padding: 10px;
   width: 100%;
   box-sizing: border-box;
   text-align: center;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   flex: 1;
 }
 
 .sc-container form button {
   all: unset;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   width: 100%;
   box-sizing: border-box;
   padding: 20px 10px;
   text-align: center;
-  background-color: #666666;
-  color: #ffffff;
+  background-color: var(--c-point);
+  color: var(--c-point-h);
   cursor: pointer;
 }
 
 .sc-container form button:hover,
 .sc-container form .file-upload label:hover {
-  background-color: #555555;
+  background-color: var(--c-point-h);
+  color: #ffffff;
 }
 
 .hidden {
@@ -192,4 +191,33 @@ main .sc-container.reverse {
   border: 0;
 }
 
-/* ==================== 고객센터 종료 ==================== */
+/* ==================== 찾아오는 길 ==================== */
+div.visit-map {
+  margin-bottom: 50px;
+}
+
+div.visit-map img {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 5px solid var(--c-point);
+}
+
+div.visit-info p {
+  display: block;
+  font-size: 1.2rem;
+}
+
+div.visit-info p:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+div.visit-info p span {
+  display: block;
+  width: 80px;
+  text-align: center;
+  padding: 0 5px;
+  margin-bottom: 5px;
+  background-color: var(--c-point);
+  color: var(--c-point-h);
+}

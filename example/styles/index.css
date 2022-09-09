@@ -68,7 +68,7 @@ main section h2 {
 }
 
 main section .item-list {
-  background-color: #eeeeee;
+  background-color: var(--white-e5);
   display: flex;
   align-items: center;
   justify-content: start;
@@ -76,7 +76,7 @@ main section .item-list {
 }
 
 main section .item-list .item {
-  background-color: #eeeeee;
+  background-color: var(--white-e5);
   box-sizing: border-box;
   padding: 10px;
 }
@@ -86,7 +86,7 @@ main section .item-list .item {
   font-size: 2rem;
   text-align: center;
   line-height: 300px;
-  background-color: #666666;
+  background-color: var(--c-point);
   margin-bottom: 10px;
 }
 

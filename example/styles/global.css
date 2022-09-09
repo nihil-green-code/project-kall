@@ -3,9 +3,45 @@
 :root {
   --white-f: #ffffff;
   --white-e: #eeeeee;
+  --white-e5: rgba(238, 238, 238, 0.565);
+  --black-2: #222222;
   --black-3: #333333;
-  --black-6: #666666;
   --black-5: #555555;
+  --black-6: #666666;
+
+  /* 베이스 후보 1 */
+  /* --c-base: #fdfcc880; */
+
+  /* 베이스 후보 2 */
+  --c-base: #cdf1f780;
+
+  /* 베이스 후보 3 */
+  /* --c-base: #cdf7df80; */
+
+  /* 포인트 후보 1 포인트로 쓰기엔 잘 안보임. */
+  /* --c-point: #fdfcc8; */
+
+  /* 포인트 후보 2 */
+  /* --c-point: #cdf1f7; */
+
+  /* 2 좀 더 진하게 */
+  --c-point: #a3dae3;
+
+  /* 포인트 후보 3 */
+  /* --c-point: #cdf7df; */
+
+  /* 3 좀 더 진하게 */
+  /* --c-point: #a5e6c2; */
+
+  /* --c-point-h: #eae9b1; */
+  --c-point-h: #104750;
+  --c-point2: #fdfcc8;
+  --c-link: #258aef;
+  --c-link-h: #0b64bd;
+
+  /* background-color: #cdf7df; */
+  /* background-color: rgb(253, 252, 200); */
+  /* background-color: #cdf1f7; */
 }
 
 * {
@@ -13,7 +49,6 @@
   margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 400;
-  color: var(--black-3);
 }
 
 a {
