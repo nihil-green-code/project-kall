@@ -48,6 +48,7 @@ fieldset {
   all: unset;
   flex: 1;
   padding: 10px;
+  font-size: 1.2rem;
   background-color: #eeeeee;
 }
 
@@ -63,6 +64,7 @@ fieldset {
   all: unset;
   background-color: #eeeeee;
   padding: 10px;
+  font-size: 1.2rem;
   width: 100%;
   text-align: center;
   appearance: auto;
@@ -88,6 +90,7 @@ fieldset {
   appearance: auto;
   background-color: #eeeeee;
   padding: 10px;
+  font-size: 1.2rem;
   flex: 1;
 }
 
@@ -98,13 +101,9 @@ fieldset {
 #choose div input[type="checkbox"]+label {
   background-color: #eeeeee;
   padding: 10px;
+  font-size: 1.2rem;
   user-select: none;
   cursor: pointer;
-}
-
-#choose div input[type="checkbox"]:checked+label {
-  background-color: #555555;
-  color: #ffffff;
 }
 
 #choose>div div.checkboxs {
@@ -116,13 +115,48 @@ fieldset {
 }
 
 #choose>div div.checkboxs label {
-  flex: 1;
+  flex-grow: 1;
   text-align: center;
+}
+
+#choose>div div.checkboxs label:hover {
+  background-color: #dddddd;
+}
+
+#choose>div div.checkboxs label i {
+  display: none;
+}
+
+#choose div input[type="checkbox"]:checked+label i {
+  display: inline-block;
+}
+
+#choose div input[type="checkbox"]:checked+label,
+#choose div input[type="checkbox"]:checked+label i {
+  background-color: #555555;
+  color: #ffffff;
+}
+
+#choose>div.visit-root {
+  margin-bottom: 20px;
 }
 
 /* ==================== 약관 동의 ==================== */
 #agree a {
-  color: #0000ff80;
+  color: #1881ea;
+}
+
+#agree a:hover {
+  color: #0b64bd;
+  text-decoration: underline;
+}
+
+#agree div label {
+  display: block;
+}
+
+#agree div label:not(:last-of-type) {
+  margin-bottom: 10px;
 }
 
 /*회원가입 버튼 */
@@ -130,14 +164,13 @@ fieldset {
 
 #join {
   all: unset;
-  margin-top: 20px;
+  margin-top: 50px;
   width: 100%;
   box-sizing: border-box;
   background-color: #666666;
   text-align: center;
   padding: 20px 10px;
   font-size: 1.2rem;
-  font-weight: 600;
   color: #ffffff;
   cursor: pointer;
 }
