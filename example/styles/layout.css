@@ -17,10 +17,10 @@ header {
 .title-logo img {
   width: 150px;
   /* #333333 */
-  filter: invert(22%) sepia(0%) saturate(1837%) hue-rotate(221deg) brightness(83%) contrast(95%);
+  /* filter: invert(22%) sepia(0%) saturate(1837%) hue-rotate(221deg) brightness(83%) contrast(95%); */
 
   /* #104750 */
-  /* filter: invert(22%) sepia(38%) saturate(787%) hue-rotate(140deg) brightness(97%) contrast(97%); */
+  filter: invert(22%) sepia(38%) saturate(787%) hue-rotate(140deg) brightness(97%) contrast(97%);
 
   /* #cdf1f7 */
   /* filter: invert(91%) sepia(6%) saturate(1440%) hue-rotate(169deg) brightness(105%) contrast(94%); */

@@ -28,6 +28,7 @@ div#top div.top-right {
   flex: 1;
 }
 
+/* ==================== 상단 왼쪽 ==================== */
 div#top div.top-left div.main-image {
   display: block;
   text-align: center;
@@ -59,6 +60,7 @@ div.other-images div:hover {
   border: 1px solid var(--c-point);
 }
 
+/* ==================== 상단 오른쪽 ==================== */
 div#top div.top-right {
   font-size: 1.2rem;
 }
@@ -68,7 +70,7 @@ div.top-right>div.right-header {
   flex-direction: row;
   gap: 10px;
   border-bottom: 1px solid #333333;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -145,6 +147,7 @@ div#top div.top-right p.rating {
   bottom: 0;
 }
 
+/* ==================== 옵션 선택 ==================== */
 div.top-right div.select {
   display: flex;
   flex-direction: column;
@@ -171,6 +174,80 @@ div.top-right div.select select:focus {
   border: 1px solid var(--c-point);
 }
 
+/* ==================== 옵션 선택 완료 버튼 ==================== */
+div.option-complete {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: right;
+}
+
+div.option-complete button {
+  all: unset;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  background-color: var(--c-point);
+  color: var(--c-point-h);
+  cursor: pointer;
+}
+
+div.option-complete button:hover {
+  background-color: var(--c-point-h);
+  color: white;
+}
+
+/* ==================== 선택한 옵션 적용된 상품 리스트 ==================== */
+p.seleted-item {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+div.items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+div.items div.item {
+  background-color: var(--white-e);
+  padding: 10px;
+}
+
+/* ==================== 상품 수량 조절 ==================== */
+div.top-right div.count {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+div.top-right div.count div.minus,
+div.top-right div.count div.plus {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #33333330;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #aaaaaa;
+}
+
+div.top-right div.count div.minus:hover,
+div.top-right div.count div.plus:hover {
+  border-color: var(--c-point);
+  color: var(--c-point);
+}
+
+div.top-right div.count div.number {
+  padding: 10px;
+  background-color: var(--white-e);
+  flex: 0 50px;
+  text-align: center;
+}
+
+/* ==================== 구매 버튼 ==================== */
 div.top-right div.buttons {
   display: flex;
   flex-direction: row;
@@ -211,34 +288,61 @@ div.other-items {
 div.other-items div.item {
   flex: 1;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: column;
   gap: 10px;
-  border: 1px solid #33333330;
+  border: 2px solid var(--white-e);
   box-sizing: border-box;
   padding: 10px;
+  text-align: center;
 }
 
 div.other-items div.item:hover {
-  border: 1px solid var(--c-point);
+  border-color: var(--c-point);
 }
 
 div.item div.image {
   background-color: var(--black-3);
   color: white;
-  line-height: 150px;
   text-align: center;
-  flex: 1;
+}
+
+div.item div.image img {
+  display: block;
+  width: 100%;
+  height: 180px;
+}
+
+div.item div.image a {
+  display: block;
+  line-height: 180px;
+  color: white;
 }
 
 div.item div.info {
-  flex: 0 200px;
+  font-size: 1.2rem;
+}
+
+div.item div.info p.price {
+  margin-bottom: 5px;
+}
+
+div.item div.info p.rating {
+  color: var(--c-point);
 }
 
 div.info h4 {
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 5px;
+}
+
+div.info h4 a {
+  color: var(--c-link);
+}
+
+div.info h4 a:hover {
+  color: var(--c-link-h);
+  text-decoration: underline;
 }
 
 /* ==================== 탭 영역 ==================== */
@@ -291,5 +395,5 @@ div.content p {
 }
 
 div.item-info section:not(:last-of-type) {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }

@@ -120,7 +120,33 @@
     </div>
 
     <form action="#">
-      <table class="item-table">
+      <div class="cart">
+        <div class="line">
+          <div class="line-header w25">
+            <input type="checkbox" id="all-item" onclick="allSelect()">
+          </div>
+          <div class="line-header">상품/옵션 정보</div>
+          <div class="line-header w100">수량</div>
+          <div class="line-header w100">상품금액</div>
+        </div>
+        <div class="line">
+          <div class="line-content w25">
+            <input type="checkbox" name="item[]" value="item1">
+          </div>
+          <div class="line-content">레터링케이크</div>
+          <div class="line-content w100">1</div>
+          <div class="line-content w100">35,000</div>
+        </div>
+        <div class="line">
+          <div class="line-content w25">
+            <input type="checkbox" name="item[]" value="item2">
+          </div>
+          <div class="line-content">레터링케이크</div>
+          <div class="line-content w100">1</div>
+          <div class="line-content w100">35,000</div>
+        </div>
+      </div>
+      <!-- <table class="item-table">
         <colgroup>
           <col style="width:3%">
           <col>
@@ -153,7 +179,7 @@
             <td>35,000</td>
           </tr>
         </tbody>
-      </table>
+      </table> -->
 
       <div id="cash">
         <p>상품 총 금액 <i class="fas fa-caret-right"></i><span>70,000원</span></p>

@@ -64,12 +64,10 @@ main div.flow p.not-now {
 }
 
 /* ==================== 테이블 ==================== */
-table.item-table {
+/* table.item-table {
   border: none;
   text-align: center;
   width: 100%;
-  background-color: var(--white-e);
-  border: 2px solid var(--c-point);
   box-sizing: border-box;
   border-collapse: collapse;
   margin-bottom: 50px;
@@ -85,39 +83,79 @@ table.item-table th {
 }
 
 table.item-table td {
+  background-color: var(--white-e);
+  color: var(--black-3);
   padding: 10px;
   font-size: 1.2rem;
 }
 
 table.item-table th:not(:last-of-type),
 table.item-table td:not(:last-of-type) {
-  border-right: 1px solid #ffffff;
+  border-right: 1px solid white;
 }
 
 table.item-table tr:not(:last-of-type) {
-  border-bottom: 1px dashed var(--c-point);
+  border-bottom: 1px solid white;
+} */
+
+div.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-bottom: 50px;
+}
+
+div.cart div.line {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+}
+
+div.line div.line-header,
+div.line div.line-content {
+  text-align: center;
+  padding: 10px;
+  flex: 1;
+  font-size: 1.2rem;
+}
+
+div.line div.line-header.w25,
+div.line div.line-content.w25 {
+  flex: 0 25px;
+}
+
+div.line div.line-header.w100,
+div.line div.line-content.w100 {
+  flex: 0 100px;
+}
+
+div.line div.line-header {
+  background-color: var(--c-point);
+  color: var(--c-point-h);
+  font-weight: 700;
+}
+
+div.line div.line-content {
+  background-color: var(--white-e);
 }
 
 /* ==================== 금액 ==================== */
 #cash {
-  border: 2px solid var(--c-point);
-  background-color: var(--white-e);
   box-sizing: border-box;
   font-size: 1.2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 1px;
+  margin-bottom: 1px;
 }
 
 #cash>p {
   padding: 10px;
   flex: 1;
   text-align: center;
-}
-
-#cash>p:not(:last-of-type) {
-  border-right: 1px dashed var(--c-point);
+  background-color: var(--white-e);
 }
 
 #cash>p span,
