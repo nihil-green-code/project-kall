@@ -85,7 +85,7 @@ main .sc-container {
 .sc-container section input[type="radio"]:checked+label+p {
   display: block;
   padding: 20px;
-  background-color: var(--white-e5);
+  background-color: var(--white-e);
   border-bottom: 1px solid #333333;
 }
 
@@ -102,7 +102,7 @@ main .sc-container {
   box-sizing: border-box;
   padding: 10px;
   font-size: 1.2rem;
-  background-color: var(--white-e5);
+  background-color: var(--white-e);
   color: #333333;
   margin-bottom: 10px;
 }
@@ -119,7 +119,7 @@ main .sc-container {
   padding: 10px;
   box-sizing: border-box;
   appearance: auto;
-  background-color: var(--white-e5);
+  background-color: var(--white-e);
   font-size: 1.2rem;
   color: #333333;
   margin-bottom: 10px;
@@ -132,7 +132,7 @@ main .sc-container {
   box-sizing: border-box;
   font-size: 1.2rem;
   margin-bottom: 10px;
-  background-color: var(--white-e5);
+  background-color: var(--white-e);
   color: #333333;
 }
 

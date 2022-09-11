@@ -6,7 +6,7 @@ header {
   justify-content: center;
   margin-bottom: 50px;
   padding: 10px;
-  background-color: var(--c-base);
+  border-bottom: 1px solid var(--c-point);
 }
 
 .title-logo span {
@@ -16,21 +16,47 @@ header {
 
 .title-logo img {
   width: 150px;
+  /* #333333 */
+  filter: invert(22%) sepia(0%) saturate(1837%) hue-rotate(221deg) brightness(83%) contrast(95%);
+
+  /* #104750 */
+  /* filter: invert(22%) sepia(38%) saturate(787%) hue-rotate(140deg) brightness(97%) contrast(97%); */
+
+  /* #cdf1f7 */
+  /* filter: invert(91%) sepia(6%) saturate(1440%) hue-rotate(169deg) brightness(105%) contrast(94%); */
+
+  /* #cdf7df */
+  /* filter: invert(93%) sepia(15%) saturate(420%) hue-rotate(82deg) brightness(102%) contrast(94%); */
+
+  /* #fdfcc8 */
+  /* filter: invert(95%) sepia(3%) saturate(2137%) hue-rotate(12deg) brightness(102%) contrast(102%); */
 }
 
 .user-menu {
   flex: 1;
   text-align: right;
-}
-
-.user-menu li {
-  display: inline-block;
-  padding: 0 10px;
-  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
 }
 
 .user-menu li a {
-  color: var(--black-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #33333330;
+  color: #aaaaaa;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.user-menu li a:hover {
+  border: 2px solid var(--c-point);
+  color: var(--c-point);
 }
 
 /* ==================== 헤더 종료 ==================== */
@@ -52,7 +78,6 @@ nav {
 .main-nav li {
   width: 130px;
   box-sizing: border-box;
-  cursor: pointer;
   background-color: #ffffff;
 }
 
@@ -60,8 +85,9 @@ nav {
   display: inline-block;
   border-bottom: 1px solid #33333330;
   color: var(--black-3);
-  width: 132px;
+  width: 100%;
   padding: 10px 0;
+  font-size: 1.2rem;
 }
 
 .sub-nav {
@@ -69,7 +95,7 @@ nav {
 }
 
 .main-nav li:hover {
-  background-color: var(--white-e5);
+  background-color: var(--white-e);
 }
 
 .main-nav li:hover .sub-nav {

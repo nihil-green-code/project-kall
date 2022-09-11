@@ -67,7 +67,7 @@ nav {
 }
 
 .main-nav li:hover {
-  background-color: var(--white-e5);
+  background-color: var(--white-e);
 }
 
 .main-nav li:hover .sub-nav {
@@ -151,7 +151,7 @@ section h2 {
 }
 
 .item-list {
-  background-color: var(--white-e5);
+  background-color: var(--white-e);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -201,7 +201,7 @@ section h2 {
 footer {
   line-height: 150px;
   margin-top: 50px;
-  background-color: var(--white-e5);
+  background-color: var(--white-e);
   text-align: center;
 }
 

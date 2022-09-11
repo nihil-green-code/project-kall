@@ -37,7 +37,7 @@ select {
   all: unset;
   padding: 10px;
   margin: 10px;
-  background-color: var(--white-e5);
+  background-color: var(--white-e);
 }
 
 #required div {

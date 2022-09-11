@@ -11,11 +11,12 @@ main h2 {
   font-weight: 700;
 }
 
+/* ==================== 주문 흐름 ==================== */
 main div.flow {
   font-size: 1.5rem;
   display: flex;
   line-height: 70px;
-  background-color: var(--white-e5);
+  background-color: var(--white-e);
   margin-bottom: 50px;
 }
 
@@ -43,8 +44,13 @@ main div.flow p.arrow::before {
   z-index: 1;
 }
 
-main div.flow p.arrow.now::before {
+main div.flow p.now.arrow.back,
+main div.flow p.now.arrow.front::before {
   background-color: var(--c-point);
+}
+
+main div.flow p.now.arrow.back::before {
+  background-color: var(--white-e);
 }
 
 main div.flow p.now:not(.arrow) {
@@ -55,15 +61,16 @@ main div.flow p.now:not(.arrow) {
 
 main div.flow p.not-now {
   color: #888888;
+  text-indent: -30px;
 }
 
-/***/
+/* ==================== 테이블 ==================== */
 table.item-table {
   border: none;
   text-align: center;
   width: 100%;
-  background-color: var(--white-e5);
-  border: 5px solid var(--c-point);
+  background-color: var(--white-e);
+  border: 2px solid var(--c-point);
   box-sizing: border-box;
   border-collapse: collapse;
   margin-bottom: 50px;
@@ -71,10 +78,11 @@ table.item-table {
 
 table.item-table th {
   background-color: var(--c-point);
-  color: white;
+  color: var(--c-point-h);
   border: none;
   padding: 10px;
   font-size: 1.2rem;
+  font-weight: 700;
 }
 
 table.item-table td {
@@ -91,32 +99,48 @@ table.item-table tr:not(:last-of-type) {
   border-bottom: 1px dashed var(--c-point);
 }
 
+/* ==================== 금액 ==================== */
 #cash {
-  border: none;
-  background-color: var(--white-e5);
-  border: 2px solid var(--c-point-h);
+  border: 2px solid var(--c-point);
+  background-color: var(--white-e);
   box-sizing: border-box;
-  text-align: right;
   font-size: 1.2rem;
-  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 #cash>p {
   padding: 10px;
+  flex: 1;
+  text-align: center;
 }
 
 #cash>p:not(:last-of-type) {
-  border-bottom: 1px dashed var(--c-point);
+  border-right: 1px dashed var(--c-point);
 }
 
-#cash>p span {
+#cash>p span,
+#all span {
   font-weight: 700;
+  margin-left: 10px;
 }
 
+#all {
+  background-color: var(--c-point);
+  color: var(--c-point-h);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+/* ==================== 버튼 ==================== */
 form>div>input {
   all: unset;
   text-align: center;
-  padding: 10px;
+  padding: 10px 20px;
   background-color: var(--c-point);
   color: var(--c-point-h);
   font-size: 1.2rem;
@@ -129,13 +153,6 @@ div.buttons {
   align-items: center;
   justify-content: flex-end;
   gap: 20px;
-}
-
-#all {
-  background-color: var(--c-point-h);
-  color: white;
-  font-size: 2rem;
-  font-weight: 900;
 }
 
 form>div>input:hover {

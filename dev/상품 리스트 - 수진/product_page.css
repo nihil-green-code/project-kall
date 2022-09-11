@@ -1,0 +1,65 @@
+/*   main 틀 잡기 */
+/* 1.  .item-list 을 relative로 잡고, 나머지 div큰 block들을 인라인블락으로 */
+/* 2.  flex로 정렬하기  */
+
+
+/* 1. float */
+
+/* 
+.item-list {
+    position: relative;
+}
+
+
+.item {
+    width: calc(1280px / 3);
+    height: 500px;
+    background-color: lightblue;
+    border: 1px solid;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+}
+
+main>h2 {
+    text-align: center;
+}
+
+main>div::after {
+    content: " ";
+    display: block;
+    clear: both;
+} */
+
+
+/* 2. flex */
+
+.item-list {
+  width: 1280px;
+  /* background-color: skyblue; */
+  /* border: 1px solid; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 30px;
+
+  text-align: center;
+}
+
+.item {
+  /* border: 1px solid; */
+  width: 30%;
+  padding: 50px 0;
+  box-sizing: border-box;
+
+}
+
+.item>p {
+  margin: 10px 0;
+}
+
+.item-image img {
+  max-width: 100%;
+  height: 350px;
+}

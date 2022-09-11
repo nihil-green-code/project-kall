@@ -11,14 +11,11 @@ main h2 {
 }
 
 /* 기본 설정 */
-main {
-  margin: 0 auto;
-}
 
 .login_page {
-  margin: auto;
+  width: 600px;
+  margin: 0 auto;
   text-align: center;
-  width: calc(1280px / 3);
 }
 
 /* .customer_login,
@@ -48,7 +45,7 @@ main a {
   box-sizing: border-box;
   margin-bottom: 10px;
   color: var(--black-3);
-  background-color: var(--white-e5);
+  background-color: var(--white-e);
 }
 
 .login_ID>input:focus,

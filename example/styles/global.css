@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 
 :root {
+  scroll-behavior: smooth;
   --white-f: #ffffff;
   --white-e: #eeeeee;
-  --white-e5: rgba(238, 238, 238, 0.565);
+  --white-e5: #eeeeee80;
   --black-2: #222222;
   --black-3: #333333;
   --black-5: #555555;
@@ -26,6 +27,7 @@
 
   /* 2 좀 더 진하게 */
   --c-point: #a3dae3;
+  /* --c-point: #bde9f0; */
 
   /* 포인트 후보 3 */
   /* --c-point: #cdf7df; */
@@ -35,12 +37,15 @@
 
   /* --c-point-h: #eae9b1; */
   --c-point-h: #104750;
+  /* --c-point-h: #327680; */
+
   --c-point2: #fdfcc8;
-  --c-link: #258aef;
-  --c-link-h: #0b64bd;
+  --c-point2-h: #b6b57a;
+  --c-link: #3897f5;
+  --c-link-h: #1a7bdc;
 
   /* background-color: #cdf7df; */
-  /* background-color: rgb(253, 252, 200); */
+  /* background-color: #fdfcc8; */
   /* background-color: #cdf1f7; */
 }
 
@@ -62,4 +67,13 @@ ol {
 
 li {
   list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
 }
