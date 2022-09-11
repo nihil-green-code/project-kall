@@ -26,7 +26,7 @@ main div.flow p {
 }
 
 main div.flow p.arrow {
-  flex: 0 0 70px;
+  flex: 0 0 40px;
   position: relative;
   overflow: hidden;
   z-index: auto;
@@ -38,7 +38,7 @@ main div.flow p.arrow::before {
   height: 70px;
   position: absolute;
   rotate: 45deg;
-  left: -70%;
+  left: -110%;
   border: 1px solid var(--c-point);
   box-sizing: border-box;
   z-index: 1;
@@ -61,7 +61,6 @@ main div.flow p.now:not(.arrow) {
 
 main div.flow p.not-now {
   color: #888888;
-  text-indent: -30px;
 }
 
 /* ==================== 테이블 ==================== */
