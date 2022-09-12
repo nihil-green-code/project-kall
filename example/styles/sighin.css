@@ -60,7 +60,7 @@ main a {
 .find_unknown_order,
 .order_submit {
   width: 100%;
-  padding: 10px;
+  padding: 20px 10px;
   font-size: 1.2rem;
   box-sizing: border-box;
   border: none;
@@ -113,10 +113,29 @@ button:hover {
 
 .join_sns a {
   background-color: #FAE100;
-  display: block;
-  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
   font-size: 1.2rem;
   color: #371D1E;
+  gap: 5px;
+}
+
+.join_sns a::before {
+  content: '';
+  display: inline-block;
+  background: url(../images/kakao.svg) 0/100% 100%;
+  width: 25px;
+  height: 25px;
+  filter: invert(12%) sepia(7%) saturate(3183%) hue-rotate(308deg) brightness(99%) contrast(97%);
+}
+
+/* invert(12%) sepia(7%) saturate(3183%) hue-rotate(308deg) brightness(99%) contrast(97%) */
+
+.join_sns a:hover {
+  background-color: #e7d000;
 }
 
 .login-question {

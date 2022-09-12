@@ -164,6 +164,7 @@
           <p class="shipping-price">배송비<span>5000원</span></p>
 
           <!-- 옵션은 좀 더 살펴보도록 하자. -->
+          <!-- 드롭다운 형식 -->
           <div class="select item-color">
             <label for="color">색상</label>
             <select name="color" id="color">
@@ -174,6 +175,23 @@
             </select>
           </div>
 
+          <!-- 라디오 버튼 형식 -->
+          <div class="select radio item-color">
+            <p>색상</p>
+            <input type="radio" name="color" id="color1" value="white" hidden>
+            <label for="color1">흰색</label>
+
+            <input type="radio" name="color" id="color2" value="blue" hidden>
+            <label for="color2">파란색</label>
+
+            <input type="radio" name="color" id="color3" value="red" hidden>
+            <label for="color3">빨간색</label>
+
+            <input type="radio" name="color" id="color4" value="black" hidden>
+            <label for="color4">검은색</label>
+          </div>
+
+          <!-- 드롭다운 형식 -->
           <div class="select item-shape">
             <label for="shape">모양</label>
             <select name="shape" id="shape">
@@ -181,6 +199,31 @@
               <option value="rectangle">사각형</option>
               <option value="triangle">삼각형</option>
             </select>
+          </div>
+
+          <!-- 라디오 버튼 형식 -->
+          <div class="select radio item-shape">
+            <p>모양</p>
+            <input type="radio" name="shape" id="shape1" value="round" hidden>
+            <label for="shape1">원형</label>
+
+            <input type="radio" name="shape" id="shape2" value="rectangle" hidden>
+            <label for="shape2">사각형</label>
+
+            <input type="radio" name="shape" id="shape3" value="triangle" hidden>
+            <label for="shape3">삼각형</label>
+          </div>
+
+          <div class="select item-lettering">
+            <label for="lettering">원하는 문구를 입력하세요.</label>
+            <input type="text" name="lettering" id="lettering">
+          </div>
+
+          <div class="select file item-image">
+            <p>이미지 업로드</p>
+            <input type="file" name="image" id="image" accept="image/*" hidden>
+            <input type="text" readonly>
+            <label for="image">파일 찾기</label>
           </div>
 
           <div class="option-complete">
