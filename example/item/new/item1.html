@@ -18,9 +18,27 @@
     <h1 class="title-logo">
       <span>KALL</span>
       <a href="../../index.html">
-        <img src="../../images/KALL.svg" alt="KALL 로고">
+        <img src="../../images/kall-logo.png" alt="KALL 로고">
       </a>
     </h1>
+
+    <nav>
+      <ul class="main-nav">
+        <li>
+          <a href="../../product/">주문제작</a>
+        </li>
+        <li>
+          <a href="../../premium/">프리미엄</a>
+        </li>
+        <li>
+          <a href="../../etc/">ETC</a>
+        </li>
+        <li>
+          <a href="../../community/guide/">커뮤니티</a>
+        </li>
+      </ul>
+    </nav>
+
     <ul class="user-menu">
       <li>
         <a href="../../sighin/" title="로그인">
@@ -43,65 +61,6 @@
     </ul>
   </header>
 
-  <nav>
-    <ul class="main-nav">
-      <li>
-        <a href="../../product/">주문제작</a>
-        <!-- <ul class="sub-nav">
-              <li>
-                일반 케이크
-              </li>
-              <li>
-                보틀 케이크
-              </li>
-              <li>
-                도시락 케이크
-              </li>
-              <li>
-                SUB 4
-              </li>
-            </ul> -->
-      </li>
-      <li>
-        <a href="../../premium/">프리미엄</a>
-        <!-- <ul class="sub-nav">
-              <li>
-                일반 케이크
-              </li>
-              <li>
-                보틀 케이크
-              </li>
-              <li>
-                도시락 케이크
-              </li>
-              <li>
-                SUB 4
-              </li>
-            </ul> -->
-      </li>
-      <li>
-        <a href="../../etc/">ETC</a>
-        <!-- <ul class="sub-nav">
-              <li>
-                SUB 1
-              </li>
-              <li>
-                SUB 2
-              </li>
-              <li>
-                SUB 3
-              </li>
-              <li>
-                SUB 4
-              </li>
-            </ul> -->
-      </li>
-      <!-- <li>
-        <a href="../../community/">커뮤니티</a>
-      </li> -->
-    </ul>
-  </nav>
-
   <main>
     <div class="product-detail">
       <a class="gototop" href="#">
@@ -122,6 +81,18 @@
         </div>
 
         <div class="top-right">
+          <p class="tags">
+            <span class="tag">
+              <a href="#">#색깔은</a>
+            </span>
+            <span class="tag">
+              <a href="#">#대충 아무거나</a>
+            </span>
+            <span class="tag">
+              <a href="#">#나중에 정하는 걸로</a>
+            </span>
+          </p>
+
           <div class="right-header">
             <h2>알록달록 무지개 케이크</h2>
             <div class="icons">
@@ -145,37 +116,15 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half-alt"></i>
               <i class="far fa-star"></i>
+              <span class="rating-number">(4.5)</span>
             </p>
-            <span>(4.5)</span>
-          </div>
 
-          <p class="tags">
-            <span class="tag">
-              <a href="#">#색깔은</a>
-            </span>
-            <span class="tag">
-              <a href="#">#대충 아무거나</a>
-            </span>
-            <span class="tag">
-              <a href="#">#나중에 정하는 걸로</a>
-            </span>
-          </p>
+          </div>
 
           <p class="price">15,000원</p>
           <p class="shipping-price">배송비<span>5000원</span></p>
 
           <!-- 옵션은 좀 더 살펴보도록 하자. -->
-          <!-- 드롭다운 형식 -->
-          <div class="select item-color">
-            <label for="color">색상</label>
-            <select name="color" id="color">
-              <option value="white">흰색</option>
-              <option value="blue">파란색</option>
-              <option value="red">빨간색</option>
-              <option value="black">검은색</option>
-            </select>
-          </div>
-
           <!-- 라디오 버튼 형식 -->
           <div class="select radio item-color">
             <p>색상</p>
@@ -190,16 +139,6 @@
 
             <input type="radio" name="color" id="color4" value="black" hidden>
             <label for="color4">검은색</label>
-          </div>
-
-          <!-- 드롭다운 형식 -->
-          <div class="select item-shape">
-            <label for="shape">모양</label>
-            <select name="shape" id="shape">
-              <option value="round">원형</option>
-              <option value="rectangle">사각형</option>
-              <option value="triangle">삼각형</option>
-            </select>
           </div>
 
           <!-- 라디오 버튼 형식 -->
@@ -302,6 +241,7 @@
               <i class="far fa-star"></i>
               <i class="far fa-star"></i>
               <i class="far fa-star"></i>
+              <span class="rating-number">(1.5)</span>
             </p>
           </div>
         </div>
@@ -661,7 +601,7 @@
     <div class="links">
       <a href="../../agreement">이용약관</a>
       <span>|</span><a href="../../privacy">개인정보처리방침</a>
-      <span>|</span><a href="../../service-center/guide/">고객센터</a>
+      <span>|</span><a href="../../community/guide/">고객센터</a>
     </div>
     <address class="site-address">
       <p>

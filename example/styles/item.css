@@ -131,6 +131,10 @@ p.tags span.tag a {
   box-sizing: border-box;
 }
 
+p.tags span.tag a:hover {
+  background-color: var(--c-point3-h);
+}
+
 div#top div.top-right p.price {
   margin-bottom: 10px;
   font-size: 2rem;
@@ -147,10 +151,14 @@ p.shipping-price span {
 }
 
 div#top div.top-right p.rating {
-  color: var(--c-point);
+  color: var(--c-point-h);
   margin-bottom: 10px;
   position: absolute;
   bottom: 0;
+}
+
+div#top div.top-right p.rating span.rating-number {
+  color: var(--black-3);
 }
 
 /* ==================== 옵션 선택 ==================== */
@@ -183,7 +191,7 @@ div.top-right div.select.radio,
 div.top-right div.select.file {
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px 20px;
 }
 
 div.top-right div.select.radio p,
@@ -393,7 +401,11 @@ div.item div.info p.price {
 }
 
 div.item div.info p.rating {
-  color: var(--c-point);
+  color: var(--c-point-h);
+}
+
+div.item div.info p.rating span.rating-number {
+  color: var(--black-3);
 }
 
 div.info h4 {

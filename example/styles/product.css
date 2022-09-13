@@ -23,7 +23,7 @@ main div.option-tags details[open] {
 }
 
 main div.option-tags summary {
-  background-color: var(--white-e);
+  background-color: var(--white-e5);
   padding: 10px;
   cursor: pointer;
 }
@@ -48,19 +48,19 @@ main div.option-tags div.tags {
 }
 
 div.tags input+label {
-  background-color: var(--white-e);
+  background-color: var(--c-point3);
   padding: 5px 10px;
   cursor: pointer;
   user-select: none;
 }
 
 div.tags input+label:hover {
-  background-color: #dddddd;
+  background-color: var(--c-point3-h);
 }
 
 div.tags input:checked+label {
-  background-color: var(--c-point);
-  color: var(--c-point-h);
+  background-color: var(--c-point3-h);
+  color: var(--black-3);
 }
 
 main div.option-tags button {
@@ -70,7 +70,7 @@ main div.option-tags button {
   top: 100%;
   padding: 10px 20px;
   background-color: var(--c-point);
-  color: var(--c-point-h);
+  color: var(--black-3);
   cursor: pointer;
 }
 
@@ -134,5 +134,9 @@ main div.option-tags button:hover {
 }
 
 .item .item-rating {
-  color: var(--c-point);
+  color: var(--c-point-h);
+}
+
+.item .item-rating .rating-number {
+  color: var(--black-3);
 }

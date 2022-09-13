@@ -11,7 +11,7 @@
 
   --white-f: #ffffff;
   --white-e: #eeeeee;
-  --white-e5: #eeeeee60;
+  --white-e5: #f9f9f9;
   --black-2: #222222;
   --black-3: #333333;
   --black-5: #555555;
@@ -47,6 +47,7 @@
 
   /* 핑키 */
   --c-point3: #fff0fd;
+  --c-point3-h: #f9daf5;
 
   /* --c-point-h: #eae9b1; */
   /* --c-point-h: #104750; */

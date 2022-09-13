@@ -45,13 +45,14 @@ fieldset {
   margin-right: 20px;
 }
 
-#required div input:invalid {
-  /* border: 1px solid #ff343450; */
-}
+/* 입력값이 올바르지 않을 때에는 그냥 자바스크립트로 해결하도록 하자. */
+/* #required div input:invalid {
+  border-bottom: 2px solid #ff343450;
+} */
 
 #required div input:focus,
 #required div.e-mail select:focus {
-  border: 1px solid var(--c-point);
+  border-bottom: 2px solid var(--c-point-h);
 }
 
 #required div input {
@@ -59,7 +60,6 @@ fieldset {
   flex: 1;
   padding: 10px;
   font-size: 1.2rem;
-  /* border: 1px solid var(--white-e5); */
   background-color: var(--white-e5);
   box-sizing: border-box;
 }

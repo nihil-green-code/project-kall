@@ -6,7 +6,8 @@ header {
   justify-content: center;
   margin-bottom: 75px;
   padding: 40px 10px;
-  background-color: var(--c-base);
+  /* background-color: var(--c-base); */
+  background-color: var(--c-point-h);
 }
 
 .title-logo span {
@@ -16,11 +17,10 @@ header {
 
 .title-logo img {
   margin-left: 40px;
-  width: 100px;
+  width: 120px;
 }
 
 .user-menu {
-  flex: 1;
   text-align: right;
   display: flex;
   flex-direction: row;
@@ -51,9 +51,7 @@ header {
 
 /* ==================== 메뉴 ==================== */
 nav {
-  width: 1280px;
-  text-align: center;
-  margin: 0 auto 50px auto;
+  flex: 1 0;
 }
 
 .main-nav {
@@ -65,59 +63,24 @@ nav {
 }
 
 .main-nav li {
-  width: 130px;
+  flex-basis: 150px;
   box-sizing: border-box;
-  background-color: var(--c-point);
   border-radius: 5px;
 }
 
 .main-nav>li a {
-  display: inline-block;
-  color: var(--black-3);
-  width: 100%;
+  display: block;
+  color: #ffffff;
   padding: 10px 0;
   font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 5px dotted #ffffff;
 }
 
-.sub-nav {
-  display: none;
+.main-nav>li a:hover {
+  border-bottom-style: solid;
 }
-
-.main-nav li:hover {
-  background-color: var(--white-e);
-}
-
-.main-nav li:hover .sub-nav {
-  display: block;
-  position: absolute;
-  top: 131px;
-  z-index: 2;
-}
-
-/* ==================== 서브 메뉴 ==================== */
-.sub-nav {
-  border: 1px solid #dddddd;
-  border-top: none;
-}
-
-.sub-nav>li {
-  color: #333333;
-  padding: 10px 0;
-  position: relative;
-}
-
-.sub-nav>li:not(:last-child) {
-  border-bottom: 1px solid #dddddd;
-}
-
-.sub-nav>li:hover .sub-nav2 {
-  display: block;
-  position: absolute;
-  left: 130px;
-  top: -1px;
-}
-
-/* ==================== 서브 메뉴 종료 ==================== */
 
 /* ==================== 메뉴 종료 ==================== */
 

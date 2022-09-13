@@ -52,7 +52,7 @@ main a {
 .login_password>input:focus,
 .unknown_login_orderNum>input:focus,
 .unknown_login_email>input:focus {
-  border: 1px solid var(--c-point);
+  border-bottom: 2px solid var(--c-point-h);
   outline: none;
 }
 

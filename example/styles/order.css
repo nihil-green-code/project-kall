@@ -25,7 +25,7 @@ main div.flow {
   font-size: 1.5rem;
   display: flex;
   line-height: 70px;
-  background-color: var(--white-e);
+  background-color: var(--white-e5);
   margin-bottom: 50px;
 }
 
@@ -59,12 +59,12 @@ main div.flow p.now.arrow.front::before {
 }
 
 main div.flow p.now.arrow.back::before {
-  background-color: var(--white-e);
+  background-color: #f9f9f9;
 }
 
 main div.flow p.now:not(.arrow) {
   background-color: var(--c-point);
-  color: var(--c-point-h);
+  color: var(--black-3);
   font-weight: 900;
 }
 
@@ -96,21 +96,21 @@ div.line div.line-title {
   align-items: center;
   padding: 10px;
   background-color: var(--c-point);
-  color: var(--c-point-h);
+  color: var(--black-3);
   font-weight: 700;
 }
 
 div.line div.line-content {
   padding: 10px;
   flex: 1;
-  background-color: var(--white-e);
+  background-color: var(--white-e5);
 }
 
 div.line div.line-content button {
   all: unset;
   margin-left: 10px;
   background-color: var(--c-point);
-  color: var(--c-point-h);
+  color: var(--black-3);
   padding: 5px 10px;
   cursor: pointer;
 }
@@ -124,13 +124,13 @@ div.line div.line-content button:hover {
 div.item-box {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 10px;
   margin-bottom: 50px;
 }
 
 div.item-box div {
   padding: 10px;
-  background-color: var(--white-e);
+  background-color: var(--white-e5);
 }
 
 /* ==================== 버튼 ==================== */
@@ -143,7 +143,7 @@ main button {
   cursor: pointer;
   text-align: center;
   background-color: var(--c-point);
-  color: var(--c-point-h);
+  color: var(--black-3);
   font-weight: 700;
   font-size: 1.5rem;
 }

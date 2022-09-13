@@ -12,17 +12,13 @@ main {
 }
 
 .image-container {
-  padding: 20px 0;
-  border-top: 1px solid #333333;
-  border-bottom: 1px solid #333333;
+  margin-top: -75px;
   margin-bottom: 50px;
   position: relative;
   box-sizing: border-box;
 }
 
 .image {
-  width: 100%;
-  height: 600px;
   font-size: 2rem;
   display: flex;
   flex-direction: row;
@@ -32,11 +28,11 @@ main {
 
 .image.first {
   background-color: cadetblue;
-  overflow: hidden;
 }
 
 .image.first img {
   width: 100%;
+  height: 600px;
 }
 
 .image.second {
@@ -145,7 +141,11 @@ main section .item-list .item:hover {
 }
 
 .item .item-rating {
-  color: var(--c-point);
+  color: var(--c-point-h);
+}
+
+.item .item-rating .rating-number {
+  color: var(--black-3);
 }
 
 /* ==================== 메인 종료 ==================== */
