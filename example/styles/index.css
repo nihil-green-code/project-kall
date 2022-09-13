@@ -32,6 +32,11 @@ main {
 
 .image.first {
   background-color: cadetblue;
+  overflow: hidden;
+}
+
+.image.first img {
+  width: 100%;
 }
 
 .image.second {

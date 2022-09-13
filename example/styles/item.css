@@ -82,7 +82,7 @@ div.top-right>div.right-header {
 }
 
 div.top-right>div.right-header h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 500;
   flex: 1;
 }
@@ -126,14 +126,14 @@ p.tags span.tag:not(:last-of-type) {
 p.tags span.tag a {
   padding: 5px 10px;
   display: block;
-  background-color: var(--c-point2);
+  background-color: var(--c-point3);
   color: var(--black-3);
   box-sizing: border-box;
 }
 
 div#top div.top-right p.price {
   margin-bottom: 10px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -160,11 +160,11 @@ div.top-right div.select {
 }
 
 div.top-right div.select:not(:last-of-type) {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 div.top-right div.select label {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 div.top-right div.select select {
@@ -172,8 +172,7 @@ div.top-right div.select select {
   appearance: auto;
   box-sizing: border-box;
   padding: 10px;
-  background-color: var(--white-e);
-  border: 1px solid var(--white-e);
+  background-color: var(--white-e5);
 }
 
 div.top-right div.select select:focus {
@@ -184,7 +183,7 @@ div.top-right div.select.radio,
 div.top-right div.select.file {
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 20px;
 }
 
 div.top-right div.select.radio p,
@@ -203,15 +202,14 @@ div.top-right div.select.radio input[type="radio"]+label {
 
 div.top-right div.select.radio input[type="radio"]:checked+label {
   background-color: var(--c-point);
-  color: var(--c-point-h);
+  color: var(--black-3);
 }
 
 div.top-right div.select input[type="text"] {
   all: unset;
   padding: 10px;
-  background-color: var(--white-e);
+  background-color: var(--white-e5);
   color: var(--black-3);
-  border: 1px solid var(--white-e);
   box-sizing: border-box;
 }
 
@@ -226,7 +224,7 @@ div.top-right div.select.file input[type="text"] {
 div.top-right div.select.file label {
   flex: 0 100px;
   background-color: var(--c-point);
-  color: var(--c-point-h);
+  color: var(--black-3);
   padding: 10px;
   margin-bottom: 0;
   text-align: center;
@@ -242,16 +240,19 @@ div.top-right div.select.file label:hover {
 div.option-complete {
   margin-top: 20px;
   margin-bottom: 50px;
-  text-align: right;
+  text-align: center;
 }
 
 div.option-complete button {
   all: unset;
+  width: 100%;
+  text-align: center;
   padding: 10px 20px;
   font-size: 1.5rem;
   background-color: var(--c-point);
-  color: var(--c-point-h);
+  color: var(--black-3);
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 div.option-complete button:hover {
@@ -269,11 +270,11 @@ p.seleted-item {
 div.items {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 
 div.items div.item {
-  background-color: var(--white-e);
+  background-color: var(--white-e5);
   padding: 10px;
 }
 
@@ -306,7 +307,7 @@ div.top-right div.count div.plus:hover {
 
 div.top-right div.count div.number {
   padding: 10px;
-  background-color: var(--white-e);
+  background-color: var(--white-e5);
   flex: 0 50px;
   text-align: center;
 }
@@ -326,7 +327,7 @@ div.buttons button {
   text-align: center;
   cursor: pointer;
   background-color: var(--c-point);
-  color: var(--c-point-h);
+  color: var(--black-3);
   font-size: 1.4rem;
 }
 
@@ -420,15 +421,16 @@ div.item-info section ul>li {
   flex: 1;
   text-align: center;
   line-height: 50px;
-  background-color: var(--c-base);
-  border-bottom: 2px solid var(--c-point);
+  background-color: var(--c-point-n);
+  border-bottom: 2px solid var(--c-point-h);
   font-size: 1.2rem;
   box-sizing: border-box;
 }
 
 div.item-info section ul>li a {
   display: block;
-  color: var(--c-point-h);
+  /* color: var(--c-point-h); */
+  color: #33333380;
 }
 
 div.item-info section ul>li a:hover {
@@ -436,20 +438,20 @@ div.item-info section ul>li a:hover {
 }
 
 div.item-info section ul>li[aria-selected="true"] {
-  border: 2px solid var(--c-point);
+  border: 2px solid var(--c-point-h);
   border-bottom: none;
 }
 
 div.item-info section ul>li[aria-selected="true"] a {
-  background-color: var(--c-point);
-  color: var(--c-point-h);
+  background-color: var(--c-point-h);
+  color: var(--black-3);
   font-weight: 700;
 }
 
 /* ==================== 탭 본문 ==================== */
 div.item-info section div.content {
   padding: 20px;
-  border: 2px solid var(--c-point);
+  border: 2px solid var(--c-point-h);
   border-top: none;
   font-size: 1.2rem;
   text-align: justify;

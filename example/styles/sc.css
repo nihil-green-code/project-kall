@@ -76,6 +76,28 @@ main .sc-container {
   border-bottom: 1px solid #333333;
   font-size: 1.2rem;
   cursor: pointer;
+  position: relative;
+}
+
+.sc-container section input[type="radio"]+label::before {
+  content: '\f0a9';
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.sc-container section input[type="radio"]+label::after {
+  content: '\f107';
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-weight: 900;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sc-container section input[type="radio"]:checked+label::after {
+  content: '\f106';
 }
 
 .sc-container section input[type="radio"]+label:nth-of-type(1) {
@@ -85,7 +107,7 @@ main .sc-container {
 .sc-container section input[type="radio"]:checked+label+p {
   display: block;
   padding: 20px;
-  background-color: var(--white-e);
+  background-color: var(--white-e5);
   border-bottom: 1px solid #333333;
 }
 
@@ -102,7 +124,7 @@ main .sc-container {
   box-sizing: border-box;
   padding: 10px;
   font-size: 1.2rem;
-  background-color: var(--white-e);
+  background-color: var(--white-e5);
   color: #333333;
   margin-bottom: 10px;
 }
@@ -119,7 +141,7 @@ main .sc-container {
   padding: 10px;
   box-sizing: border-box;
   appearance: auto;
-  background-color: var(--white-e);
+  background-color: var(--white-e5);
   font-size: 1.2rem;
   color: #333333;
   margin-bottom: 10px;
@@ -132,7 +154,7 @@ main .sc-container {
   box-sizing: border-box;
   font-size: 1.2rem;
   margin-bottom: 10px;
-  background-color: var(--white-e);
+  background-color: var(--white-e5);
   color: #333333;
 }
 
@@ -153,7 +175,7 @@ main .sc-container {
   all: unset;
   margin-left: 10px;
   background-color: var(--c-point);
-  color: #ffffff;
+  color: var(--black-3);
   padding: 10px;
   width: 100%;
   box-sizing: border-box;
@@ -171,7 +193,7 @@ main .sc-container {
   padding: 20px 10px;
   text-align: center;
   background-color: var(--c-point);
-  color: var(--c-point-h);
+  color: var(--black-3);
   cursor: pointer;
 }
 
@@ -219,5 +241,5 @@ div.visit-info p span {
   padding: 0 5px;
   margin-bottom: 5px;
   background-color: var(--c-point);
-  color: var(--c-point-h);
+  color: var(--black-3);
 }

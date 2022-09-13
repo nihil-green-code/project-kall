@@ -16,7 +16,7 @@ main div.flow {
   font-size: 1.5rem;
   display: flex;
   line-height: 70px;
-  background-color: var(--white-e);
+  background-color: var(--white-e5);
   margin-bottom: 50px;
 }
 
@@ -50,12 +50,12 @@ main div.flow p.now.arrow.front::before {
 }
 
 main div.flow p.now.arrow.back::before {
-  background-color: var(--white-e);
+  background-color: var(--white-e5);
 }
 
 main div.flow p.now:not(.arrow) {
   background-color: var(--c-point);
-  color: var(--c-point-h);
+  color: var(--black-3);
   font-weight: 900;
 }
 
@@ -131,12 +131,12 @@ div.line div.line-content.w100 {
 
 div.line div.line-header {
   background-color: var(--c-point);
-  color: var(--c-point-h);
+  color: var(--black-3);
   font-weight: 700;
 }
 
 div.line div.line-content {
-  background-color: var(--white-e);
+  background-color: var(--white-e5);
 }
 
 /* ==================== 금액 ==================== */
@@ -155,7 +155,7 @@ div.line div.line-content {
   padding: 10px;
   flex: 1;
   text-align: center;
-  background-color: var(--white-e);
+  background-color: var(--white-e5);
 }
 
 #cash>p span,
@@ -166,10 +166,10 @@ div.line div.line-content {
 
 #all {
   background-color: var(--c-point);
-  color: var(--c-point-h);
+  color: var(--black-3);
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   padding: 10px;
 }
 
@@ -179,7 +179,7 @@ form>div>input {
   text-align: center;
   padding: 10px 20px;
   background-color: var(--c-point);
-  color: var(--c-point-h);
+  color: var(--black-3);
   font-size: 1.2rem;
   cursor: pointer;
 }

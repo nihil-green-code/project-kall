@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
 :root {
   scroll-behavior: smooth;
+  --c-base: #d7e6ff;
+  --c-point: #d7e6ff;
+  --c-point-h: #acccff;
+  --c-point-n: #e9f1ff;
+
+
   --white-f: #ffffff;
   --white-e: #eeeeee;
-  --white-e5: #eeeeee80;
+  --white-e5: #eeeeee60;
   --black-2: #222222;
   --black-3: #333333;
   --black-5: #555555;
@@ -14,7 +21,8 @@
   /* --c-base: #fdfcc880; */
 
   /* 베이스 후보 2 */
-  --c-base: #cdf1f780;
+  /* --c-base: #cdf1f780; */
+  /* --c-base: #d7e6ff; */
 
   /* 베이스 후보 3 */
   /* --c-base: #cdf7df80; */
@@ -23,10 +31,12 @@
   /* --c-point: #fdfcc8; */
 
   /* 포인트 후보 2 */
-  /* --c-point: #cdf1f7; */
+  /* --c-point2: #cdf1f7; */
+  /* --c-point2: #e6fbff; */
+  /* --c-point2: #f9ebff; */
 
   /* 2 좀 더 진하게 */
-  --c-point: #a3dae3;
+  /* --c-point: #a3dae3; */
   /* --c-point: #bde9f0; */
 
   /* 포인트 후보 3 */
@@ -35,8 +45,11 @@
   /* 3 좀 더 진하게 */
   /* --c-point: #a5e6c2; */
 
+  /* 핑키 */
+  --c-point3: #fff0fd;
+
   /* --c-point-h: #eae9b1; */
-  --c-point-h: #104750;
+  /* --c-point-h: #104750; */
   /* --c-point-h: #327680; */
 
   --c-point2: #fdfcc8;
@@ -52,7 +65,8 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'nanumsquare', sans-serif;
   font-weight: 400;
 }
 
