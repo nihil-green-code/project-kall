@@ -39,6 +39,12 @@ div#top div.top-left div.main-image {
   margin-bottom: 10px;
 }
 
+div#top div.top-left div.main-image img {
+  width: 100%;
+  height: 560px;
+  display: block;
+}
+
 div#top div.top-left div.other-images {
   display: flex;
   flex-direction: row;
@@ -319,13 +325,14 @@ div.buttons button {
   padding: 20px 10px;
   text-align: center;
   cursor: pointer;
-  background-color: var(--c-base);
+  background-color: var(--c-point);
   color: var(--c-point-h);
   font-size: 1.4rem;
 }
 
 div.buttons button:hover {
-  background-color: var(--c-point);
+  background-color: var(--c-point-h);
+  color: white;
 }
 
 /* ==================== 다른 상품 추천 ==================== */
