@@ -8,6 +8,12 @@
   --c-point-h: #acccff;
   --c-point-n: #e9f1ff;
 
+  --c-point2: #fdfcc8;
+  --c-point2-h: #b6b57a;
+  --c-point3: #fff0fd;
+  --c-point3-h: #f9daf5;
+  --c-link: #3897f5;
+  --c-link-h: #1a7bdc;
 
   --white-f: #ffffff;
   --white-e: #eeeeee;
@@ -16,51 +22,6 @@
   --black-3: #333333;
   --black-5: #555555;
   --black-6: #666666;
-
-  /* 베이스 후보 1 */
-  /* --c-base: #fdfcc880; */
-
-  /* 베이스 후보 2 */
-  /* --c-base: #cdf1f780; */
-  /* --c-base: #d7e6ff; */
-
-  /* 베이스 후보 3 */
-  /* --c-base: #cdf7df80; */
-
-  /* 포인트 후보 1 포인트로 쓰기엔 잘 안보임. */
-  /* --c-point: #fdfcc8; */
-
-  /* 포인트 후보 2 */
-  /* --c-point2: #cdf1f7; */
-  /* --c-point2: #e6fbff; */
-  /* --c-point2: #f9ebff; */
-
-  /* 2 좀 더 진하게 */
-  /* --c-point: #a3dae3; */
-  /* --c-point: #bde9f0; */
-
-  /* 포인트 후보 3 */
-  /* --c-point: #cdf7df; */
-
-  /* 3 좀 더 진하게 */
-  /* --c-point: #a5e6c2; */
-
-  /* 핑키 */
-  --c-point3: #fff0fd;
-  --c-point3-h: #f9daf5;
-
-  /* --c-point-h: #eae9b1; */
-  /* --c-point-h: #104750; */
-  /* --c-point-h: #327680; */
-
-  --c-point2: #fdfcc8;
-  --c-point2-h: #b6b57a;
-  --c-link: #3897f5;
-  --c-link-h: #1a7bdc;
-
-  /* background-color: #cdf7df; */
-  /* background-color: #fdfcc8; */
-  /* background-color: #cdf1f7; */
 }
 
 * {

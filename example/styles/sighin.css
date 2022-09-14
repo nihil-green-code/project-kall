@@ -1,4 +1,8 @@
 /* ==================== 로그인 ==================== */
+main {
+  width: 600px;
+  font-size: 1.2rem;
+}
 
 main h2 {
   margin-bottom: 20px;
@@ -164,3 +168,137 @@ button:hover {
 /* 비회원 주문조회 클릭 시 밑에 뜨게 하고 싶음 */
 
 /* ==================== 로그인 종료 ==================== */
+
+/* ==================== 아이디 찾기 ==================== */
+main p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+form input[type="radio"]+label {
+  background-color: var(--white-e);
+  color: var(--black-3);
+  padding: 10px;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+
+form input[type="radio"]+label:hover {
+  background-color: #dddddd;
+}
+
+form input[type="radio"]+label:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+form input[type="radio"]:checked+label {
+  background-color: var(--c-point);
+}
+
+div.ID_email_confirm,
+div.ID_phone_confirm {
+  display: none;
+  margin-top: 15px;
+}
+
+div.ID_email_confirm>div,
+div.ID_phone_confirm>div {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 10px;
+}
+
+div.ID_email_confirm>div label,
+div.ID_phone_confirm>div label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+div.ID_phone_confirm>div div.phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.ID_phone_confirm>div div.phone input {
+  flex: 1;
+}
+
+div.ID_email_confirm input,
+div.ID_phone_confirm input {
+  all: unset;
+  background-color: var(--white-e5);
+  padding: 10px;
+  text-align: left;
+}
+
+button.ID_find_submit {
+  all: unset;
+  display: block;
+  margin: 25px auto 0;
+  width: 60%;
+  background-color: var(--c-point);
+  color: var(--black-3);
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+button.ID_find_submit:hover {
+  background-color: var(--c-point-h);
+  color: #ffffff;
+}
+
+form input#email_confirm:checked+label~div.ID_email_confirm,
+form input#phone_confirm:checked+label~div.ID_phone_confirm {
+  display: block;
+}
+
+/* ==================== 비밀번호 찾기 ==================== */
+p:nth-of-type(2) {
+  margin-top: 25px;
+}
+
+p>a {
+  color: var(--c-link);
+  text-decoration: underline;
+}
+
+p>a:hover {
+  color: var(--c-link-h);
+}
+
+form[name="customer_password_find_ID"] {
+  display: grid;
+  gap: 10px;
+}
+
+form[name="customer_password_find_ID"] input,
+form[name="customer_password_find_ID"] button {
+  all: unset;
+}
+
+form[name="customer_password_find_ID"] input {
+  background-color: var(--white-e5);
+  padding: 10px;
+  text-align: left;
+}
+
+form[name="customer_password_find_ID"] button {
+  padding: 20px 10px;
+  background-color: var(--c-point);
+  color: var(--black-3);
+  cursor: pointer;
+}
+
+form[name="customer_password_find_ID"] button:hover {
+  background-color: var(--c-point-h);
+  color: #ffffff;
+}

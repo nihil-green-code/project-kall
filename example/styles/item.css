@@ -476,3 +476,26 @@ div.content p {
 div.item-info section:not(:last-of-type) {
   margin-bottom: 50px;
 }
+
+/* ==================== 제품 상세정보 표 ==================== */
+div.description-grid {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  margin-bottom: 50px;
+  gap: 2px;
+}
+
+div.description-grid div.grid-title {
+  background-color: var(--c-point);
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.description-grid div.grid-content {
+  padding: 10px;
+  background-color: var(--white-e5);
+}

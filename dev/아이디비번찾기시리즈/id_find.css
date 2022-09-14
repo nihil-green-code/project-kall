@@ -1,0 +1,118 @@
+/* 헤더 */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom-color: black;
+}
+
+.title-logo span {
+    display: inline-block;
+    text-indent: -9999em;
+}
+
+.title-logo img {
+    width: 150px;
+}
+/* 헤더 종료 */
+
+
+
+/* ====main 시작=================================== */
+
+/* 기본 설정 */
+main {
+    margin:0 auto;
+}
+
+.id_find_page {
+    margin: auto;
+    width: calc(1280px / 3);
+}
+
+.id_find_page {
+    padding : 5px;
+}
+
+.ID_email_confirm label,
+.ID_phone_confirm label {
+    padding: 10px;
+}
+
+
+/* 입력 박스 관련 지정 */
+
+.ID_email_confirm_detail input,
+.find_ID_name_phone input{
+    width: 300px;
+    height: 50px;
+    padding: 0 15px;
+    border:none;
+    box-sizing: border-box;
+    line-height: 58px;
+    margin-bottom:10px;
+    background-color: #eeeeee;
+    text-align: left;
+}
+
+.find_ID_phoneNum_phone input {
+    width: 100px;
+    height: 50px;
+    padding: 0 15px;
+    border:none;
+    box-sizing: border-box;
+    line-height: 58px;
+    margin-bottom:10px;
+    background-color: #eeeeee;
+    text-align: left;
+}
+
+.ID_email_confirm_detail,
+.ID_phone_confirm_detail {
+    display:none;
+}
+
+
+/* radio check 시 보이게 수정 하고 싶음*/
+.ID_email_confirm>input:cheked+label+div {
+    display:block;
+}
+.ID_phone_confirm>input:cheked+label+div {
+    display:block;
+}
+
+.ID_find_submit {
+    width: 300px;
+    height: 50px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border:none;
+    line-height: 100%;
+    margin-bottom:10px;
+    background-color: #666666;
+    color:white;
+}
+
+
+
+
+
+
+
+/*=== main 종료=================================== */
+
+/* 푸터 */
+
+footer {
+    line-height: 150px;
+    margin-top: 50px;
+    background-color: #eeeeee;
+    text-align: center;
+    
+    text-decoration: none;
+}
+
+/* 푸터 종료 */
